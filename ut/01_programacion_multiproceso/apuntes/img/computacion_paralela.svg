@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="207.17863mm"
+   height="103.12826mm"
+   viewBox="0 0 207.17864 103.12826"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="computacion_paralela.svg"
+   inkscape:export-filename="computacion_paralela.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="1.661161"
+     inkscape:cx="401.5264"
+     inkscape:cy="248.3203"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-4.997265,-32.923019)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.592319;stroke-linecap:square;stroke-opacity:1"
+       d="M 21.093409,37.514612 V 128.74358 H 211.61002"
+       id="path1" />
+    <text
+       xml:space="preserve"
+       style="font-size:12.8383px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#406e43;fill-opacity:1;stroke:none;stroke-width:3.21057;stroke-linecap:square;stroke-opacity:1"
+       x="13.366918"
+       y="63.817749"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="fill:#406e43;fill-opacity:1;stroke:none;stroke-width:3.21057"
+         x="13.366918"
+         y="63.817749">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.8383px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#293ba1;fill-opacity:1;stroke:none;stroke-width:3.21057;stroke-linecap:square;stroke-opacity:1"
+       x="13.366918"
+       y="87.503075"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#293ba1;fill-opacity:1;stroke:none;stroke-width:3.21057"
+         x="13.366918"
+         y="87.503075">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12.8383px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#97264d;fill-opacity:1;stroke:none;stroke-width:3.21057;stroke-linecap:square;stroke-opacity:1"
+       x="13.366918"
+       y="111.18846"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="fill:#97264d;fill-opacity:1;stroke:none;stroke-width:3.21057"
+         x="13.366918"
+         y="111.18846">C</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.296066;stroke-linecap:square;stroke-dasharray:2.07247;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 20.950113,59.138179 H 212.02787"
+       id="path3" />
+    <path
+       style="fill:#293ba1;fill-opacity:1;stroke:none;stroke-width:0.296066;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       d="M 20.950113,82.823504 H 212.02787"
+       id="path4" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.296066;stroke-linecap:square;stroke-dasharray:2.07247;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 20.950113,106.50888 H 212.02787"
+       id="path5" />
+    <rect
+       style="fill:#406e43;fill-opacity:1;stroke:none;stroke-width:0.245224;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6"
+       width="16.897568"
+       height="7.5433478"
+       x="21.322592"
+       y="55.155762" />
+    <rect
+       style="fill:#97264d;fill-opacity:1;stroke:none;stroke-width:0.310402;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect11"
+       width="27.317238"
+       height="7.4761052"
+       x="38.343288"
+       y="102.56005" />
+    <rect
+       style="fill:#406e43;fill-opacity:1;stroke:none;stroke-width:0.202514;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect12"
+       width="11.462348"
+       height="7.5839939"
+       x="46.504116"
+       y="55.135437" />
+    <rect
+       style="fill:#97264d;fill-opacity:1;stroke:none;stroke-width:0.31272;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect13"
+       width="27.735371"
+       height="7.4737873"
+       x="65.642212"
+       y="102.56122" />
+    <rect
+       style="fill:#406e43;fill-opacity:1;stroke:none;stroke-width:0.254722;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect15"
+       width="18.259909"
+       height="7.531785"
+       x="93.791016"
+       y="55.161537" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.296066;stroke-linecap:square;stroke-dasharray:2.07247;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 20.950113,82.823528 H 212.02787"
+       id="path18" />
+    <rect
+       style="fill:#293ba1;fill-opacity:1;stroke:none;stroke-width:0.297318;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect5"
+       width="25.014988"
+       height="7.4904404"
+       x="21.398035"
+       y="78.867546" />
+    <rect
+       style="fill:#293ba1;fill-opacity:1;stroke:none;stroke-width:0.357898;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect14"
+       width="36.548927"
+       height="7.4286089"
+       x="58.345692"
+       y="78.898468" />
+    <rect
+       style="fill:#293ba1;fill-opacity:1;stroke:none;stroke-width:0.299498;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect16"
+       width="25.394506"
+       height="7.48701"
+       x="94.826553"
+       y="78.869278" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875;stroke-linecap:square;stroke-dasharray:2.77813;stroke-dashoffset:0;stroke-opacity:1"
+       x="12.337902"
+       y="35.237606"
+       id="text18"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.396875"
+         x="12.337902"
+         y="35.237606">Procesos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.396875;stroke-linecap:square;stroke-dasharray:2.77813;stroke-dashoffset:0;stroke-opacity:1"
+       x="35.666344"
+       y="135.39085"
+       id="text19"><tspan
+         sodipodi:role="line"
+         id="tspan19"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.396875"
+         x="35.666344"
+         y="135.39085">Tiempo de CPU</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 51.506733,134.53933 H 94.180645"
+       id="path19" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#3a3f29;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 38.457167,44.992439 V 128.38483"
+       id="path20" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#3a3f29;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 46.633164,44.992439 V 128.38483"
+       id="path21" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#3a3f29;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 58.269567,44.992439 V 128.38483"
+       id="path22" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#3a3f29;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 120.23864,44.992439 V 128.38483"
+       id="path23" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#3a3f29;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 93.61767,44.992439 V 128.38483"
+       id="path24" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="28.723087"
+       y="60.070496"
+       id="text26"><tspan
+         sodipodi:role="line"
+         id="tspan26"
+         style="stroke:none;stroke-width:0.264583;fill:#ffffff;fill-opacity:1"
+         x="28.723087"
+         y="60.070496">CPU1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="28.723087"
+       y="83.882988"
+       id="text27"><tspan
+         sodipodi:role="line"
+         id="tspan27"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="28.723087"
+         y="83.882988">CPU2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="42.322159"
+       y="107.69547"
+       id="text28"><tspan
+         sodipodi:role="line"
+         id="tspan28"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="42.322159"
+         y="107.69547">CPU1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="42.322159"
+       y="83.88298"
+       id="text29"><tspan
+         sodipodi:role="line"
+         id="tspan29"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="42.322159"
+         y="83.88298">CPU2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="51.795826"
+       y="60.070484"
+       id="text30"><tspan
+         sodipodi:role="line"
+         id="tspan30"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="51.795826"
+         y="60.070484">CPU2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="52.535599"
+       y="107.69547"
+       id="text31"><tspan
+         sodipodi:role="line"
+         id="tspan31"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="52.535599"
+         y="107.69547">CPU1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="76.245422"
+       y="83.882973"
+       id="text32"><tspan
+         sodipodi:role="line"
+         id="tspan32"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="76.245422"
+         y="83.882973">CPU2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="74.23143"
+       y="107.69547"
+       id="text33"><tspan
+         sodipodi:role="line"
+         id="tspan33"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="74.23143"
+         y="107.69547">CPU1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="105.87873"
+       y="83.882973"
+       id="text34"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="105.87873"
+         y="83.882973">CPU2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="102.27726"
+       y="60.070492"
+       id="text35"><tspan
+         sodipodi:role="line"
+         id="tspan35"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="102.27726"
+         y="60.070492">CPU1</tspan></text>
+  </g>
+</svg>
