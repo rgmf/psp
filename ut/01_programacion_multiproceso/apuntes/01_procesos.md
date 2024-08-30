@@ -40,6 +40,8 @@ El planificador de procesos del Sistema Operativo aplica ciertos algoritmos para
 
 ![Estados de un proceso](./img/estados_procesos.png)
 
+En esta **maquinaria de estados** vemos como el planificador va *durmiendo* y *despertando* procesos para alternarlos entre los estados de **Ejecución** y **Preparado**. Además, cuando un proceso necesita un recurso de Entrada/Salida (por ejemplo, abrir un fichero) es *suspendido* y pasa al estado de **Bloqueado**. Una vez está el recurso de Entrada/Salida listo es devuelto al estado de **Preparado**.
+
 # Programación concurrente
 
 La **computación concurrente** es la que permite que varias tareas se puedan ejecutar durante el mismo periodo de tiempo. La **programación concurrente** es la ténica de programación que permite crear sistemas donde **varios procesos** se puedan ejecutar al mismo tiempo.
