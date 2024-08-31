@@ -1,3 +1,38 @@
+* Objetivos generales y competencias
+   Según el RD de DAM (RD 450/2010, de 16 de abril) "La formación del módulo contribuye a alcanzar los objetivos generales b), e), i), j), l), n) y ñ) del ciclo formativo y las competencias b), e), i), j), l), n), ñ), t) y w) del título."
+** Objetivos generales (RD 659/2023, de 18 de julio, por el que se ordena la FP)
+   - b) Cualificar a las personas para el ejercicio de actividades profesionales, promoviendo la adquisición, consolidación y ampliación de competencias profesionales y básicas con la polivalencia y funcionalidad necesarias para el acceso al empleo, la continuidad en el mismo y la progresión y el desarrollo profesionales, así como la rápida adaptación a los retos de futuro derivados de entornos de trabajo complejos, todo ello orientado a la promoción y formación profesional dirigida a su adaptación a las modificaciones operadas en el puesto de trabajo, así como al desarrollo de planes y acciones formativas tendentes a favorecer su mayor empleabilidad.
+
+   - e) Observar de manera continua la evolución de la demanda y la oferta de profesiones, ocupaciones y perfiles en el mercado de trabajo para la prospección e identificación de las necesidades de cualificación.
+
+   - i) Operar con arreglo a un modelo de gobernanza que, respetando las competencias de las administraciones concernidas, incorpore el papel de las organizaciones empresariales y sindicales más representativas y su participación y cooperación con los poderes públicos en las políticas del Sistema de Formación Profesional.
+
+   - j) Facilitar la acreditación y el reconocimiento de las competencias profesionales vinculadas al Catálogo Nacional de Estándares de Competencias Profesionales, adquiridas mediante la experiencia laboral u otras vías no formales o informales.
+
+   - n) Incrementar la presencia social de la formación profesional como opción de valor para el empleo y la progresión académica, tanto reforzando la relación y cooperación entre los sistemas de formación profesional y universitario, como contribuyendo a la erradicación del abandono temprano sin una cualificación profesional que garantice una empleabilidad sostenida.
+
+   - ñ) Impulsar la participación de las personas adultas, para su cualificación o recualificación, en acciones de formación profesional como elemento integrado en el desempeño profesional y la vida laboral y única forma de lograr el mayor grado de especialización que demandan ámbitos cada vez más complejos.
+
+** Competencias profesionales, personales y sociales (RD 450/2010, de 16 de abril, por el que se establece el título de DAM - artículo 5)
+   - b) Aplicar técnicas y procedimientos relacionados con la seguridad en sistemas, servicios y aplicaciones, cumpliendo el plan de seguridad.
+
+   - e) Desarrollar aplicaciones multiplataforma con acceso a bases de datos utilizando lenguajes, librerías y herramientas adecuados a las especificaciones.
+
+   - i) Participar en el desarrollo de juegos y aplicaciones en el ámbito del entretenimiento y la educación empleando técnicas, motores y entornos de desarrollo específicos.
+
+   - j) Desarrollar aplicaciones para teléfonos, PDA y otros dispositivos móviles empleando técnicas y entornos de desarrollo específicos.
+
+   - l) Crear tutoriales, manuales de usuario, de instalación, de configuración y de administración, empleando herramientas específicas.
+
+   - n) Desarrollar aplicaciones multiproceso y multihilo empleando librerías y técnicas de programación específicas.
+
+   - ñ) Desarrollar aplicaciones capaces de ofrecer servicios en red empleando mecanismos de comunicación.
+
+   - t) Establecer vías eficaces de relación profesional y comunicación con sus superiores, compañeros y subordinados, respetando la autonomía y competencias de las distintas personas.
+
+   - w) Mantener el espíritu de innovación y actualización en el ámbito de su trabajo para adaptarse a los cambios tecnológicos y organizativos de su entorno profesional.
+
+
 * Resultados de aprendizaje y criterios de evaluación
 ** RA1. Desarrolla aplicaciones compuestas por varios procesos reconociendo y aplicando principios de programación paralela.
 *** Criterios de evaluación

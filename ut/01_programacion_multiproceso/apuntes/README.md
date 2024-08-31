@@ -9,10 +9,10 @@
       <th>Temporalización</th><td>TODO</td>
     </tr>
     <tr>
-      <th>Objetivos generales</th><td>TODO</td>
+      <th>Objetivos generales</th><td>b, e, i, j, n, ñ</td>
     </tr>
     <tr>
-      <th>Competencias</th><td>TODO</td>
+      <th>Competencias</th><td>n, t, w</td>
     </tr>
     <tr>
       <th>CONTENIDOS</th>
@@ -22,6 +22,16 @@
       <td>
         <p>
           1. Procesos<br>
+          1.1. Gestión de procesos por el Sistema Operativo<br>
+          1.2. Estados de un proceso<br>
+          1.3. Subprocesos<br>
+          1.4. Jerarquía de procesos<br>
+          1.5. Programación concurrente<br>
+          1.6. Programación paralela<br>
+          1.7. Programación distribuida<br>
+        </p>
+        <p>
+          2. Hilos<br>
         </p>
       </td>
       <td>
@@ -41,3 +51,4 @@
 # Índice de contenidos
 
 1. [Procesos](01_procesos.md)
+2. [Hilos](02_hilos.md)

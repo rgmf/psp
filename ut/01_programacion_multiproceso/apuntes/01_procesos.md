@@ -42,6 +42,36 @@ El planificador de procesos del Sistema Operativo aplica ciertos algoritmos para
 
 En esta **maquinaria de estados** vemos como el planificador va *durmiendo* y *despertando* procesos para alternarlos entre los estados de **Ejecución** y **Preparado**. Además, cuando un proceso necesita un recurso de Entrada/Salida (por ejemplo, abrir un fichero) es *suspendido* y pasa al estado de **Bloqueado**. Una vez está el recurso de Entrada/Salida listo es devuelto al estado de **Preparado**.
 
+## Subprocesos
+
+Al principio se explicó y se dio la definición de proceso: un programa en ejecución. Siendo real, no es del todo preciso porque **un proceso puede crear otros procesos**, a los que, a veces, se les llama **subprocesos**.
+
+Así pues, se puede dar el caso en que **un programador escribe un programa** que compila y lo convierte en ejecutable, **y ese único programa ejecutable podría crear varios procesos**. Así pues tendríamos: un programa y varios procesos.
+
+A esta técnica se la conoce como **programación multiproceso**. Y, ¿por qué existe esta técnica? Para optimizar los recursos computacionales y mejorar tiempos de ejecución. Dado que, hoy en día, todo el mundo usa ordenadores con varios procesadores o CPUs, podemos (debemos) aprovechar esta capacidad escribiendo programas que creen varios procesos.
+
+Dicho así resulta sencillo pero, en realidad, durante el desarrollo de un programa tenemos que decidir cuándo crear varios procesos para explotar la capacidad computacional de los ordenadores. Aquí te enumero algunos motivos por los que no es tan fácil:
+
+- Los procesos realizan tareas que, a veces, se tienen que dar en una determinada secuencia.
+- Puede ser necesario que haya comunicación entre los procesos.
+- Suele ser habitual la necesidad de sincronización entre los procesos.
+
+## Jerarquía de procesos
+
+Cuando se emplea la programación multiproceso se tiene una jerarquía de procesos en los que hay *padres* e *hijos*.
+
+El caso de Linux es un ejemplo claro: cuando arranca el Sistema Operativo Linux se crea un proceso llamado `init` que es el proceso padre de todos los demás.
+
+Cuando abres un programa lo hace este proceso `init`. Además, el proceso creado por `init` podría crear otros procesos que a su vez pueden crear otros procesos, generando dicha jerarquía de procesos.
+
+En la siguiente imagen se puede ver una captura de imagen de la salida del comando `pstree -u` de GNU/Linux, en la que se muestra una representación de los procesos que se están ejecutando ahora mismo, mientras escribo estas líneas, en mi ordenador:
+
+![Salida del comando pstree -u](pstree_user.png)
+
+Como ves en la captura el primer proceso, el padre de todos, se llama `systemd` (el proceso `init`). A partir de ahí se han ido creando todos los procesos.
+
+Representativo es el caso del proceso `firefox` (el navegador web) donde, como ves, ha creado varios procesos: un solo programa y 12 procesos.
+
 # Programación concurrente
 
 La **computación concurrente** es la que permite que varias tareas se puedan ejecutar durante el mismo periodo de tiempo. La **programación concurrente** es la ténica de programación que permite crear sistemas donde **varios procesos** se puedan ejecutar al mismo tiempo.
