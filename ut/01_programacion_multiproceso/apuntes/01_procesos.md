@@ -66,7 +66,7 @@ Cuando abres un programa lo hace este proceso `init`. Además, el proceso creado
 
 En la siguiente imagen se puede ver una captura de imagen de la salida del comando `pstree -u` de GNU/Linux, en la que se muestra una representación de los procesos que se están ejecutando ahora mismo, mientras escribo estas líneas, en mi ordenador:
 
-![Salida del comando pstree -u](pstree_user.png)
+![Salida del comando pstree -u](./img/pstree_user.png)
 
 Como ves en la captura el primer proceso, el padre de todos, se llama `systemd` (el proceso `init`). A partir de ahí se han ido creando todos los procesos.
 
