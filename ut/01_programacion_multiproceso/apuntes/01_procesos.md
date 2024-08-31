@@ -68,7 +68,7 @@ En la siguiente imagen se puede ver una captura de imagen de la salida del coman
 
 ![Salida del comando pstree -u](./img/pstree_user.png)
 
-Como ves en la captura el primer proceso, el padre de todos, se llama `systemd` (el proceso `init`). A partir de ahí se han ido creando todos los procesos.
+Como ves en la captura, el primer proceso, el padre de todos, se llama `systemd` (el proceso `init`). A partir de ahí se han ido creando todos los demás.
 
 Representativo es el caso del proceso `firefox` (el navegador web) donde, como ves, ha creado varios procesos: un solo programa y 12 procesos.
 
