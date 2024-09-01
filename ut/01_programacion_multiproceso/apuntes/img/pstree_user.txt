@@ -1,0 +1,45 @@
+systemd─┬─NetworkManager
+        ├─bluetoothd
+        ├─emacs
+        ├─lightdm─┬─Xorg
+        │         ├─lightdm─┬─xfce4-session(roman)─┬─Thunar
+        │         │         │                      ├─blueman-applet───4*[{blueman-applet}]
+        │         │         │                      ├─firefox─┬─5*[Isolated Web Co───27*[{Isolated Web Co}]]                       
+        │         │         │                      │         ├─10*[Isolated Web Co───26*[{Isolated Web Co}]]
+        │         │         │                      │         ├─3*[Isolated Web Co───28*[{Isolated Web Co}]]
+        │         │         │                      │         ├─Isolated Web Co───29*[{Isolated Web Co}]
+        │         │         │                      │         ├─Privileged Cont───27*[{Privileged Cont}]
+        │         │         │                      │         ├─RDD Process───4*[{RDD Process}]
+        │         │         │                      │         ├─Socket Process───5*[{Socket Process}]
+        │         │         │                      │         ├─Utility Process───4*[{Utility Process}]
+        │         │         │                      │         ├─3*[Web Content───18*[{Web Content}]]
+        │         │         │                      │         ├─WebExtensions───26*[{WebExtensions}]
+        │         │         │                      │         ├─file:// Content───28*[{file:// Content}]
+        │         │         │                      │         └─177*[{firefox}]
+        │         │         │                      ├─nextcloud
+        │         │         │                      ├─nm-applet
+        │         │         │                      ├─xfce4-power-manager
+        │         │         │                      ├─xfce4-screensaver
+        │         │         │                      ├─xfdesktop
+        │         │         │                      ├─xfsettingsd─┬─xfce4-appfinder─┬─inkscape
+        │         │         │                      │             │                 └─xfce4-appfinder
+        │         │         │                      │             ├─xfce4-terminal─┬─bash───pstree
+        │         │         │                      │             │                └─xfce4-terminal
+        │         │         │                      │             └─xfsettingsd
+        │         │         │                      ├─xfwm4
+        │         │         │                      └─xfce4-session
+        │         │         └─lightdm
+        │         └─lightdm
+        ├─okular
+        ├─ssh-agent
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-udevd
+        ├─wpa_supplicant
+        └─zed-editor─┬─bash
+                     ├─markdown-oxide
+                     ├─sm-agent-26
+                     └─zed-editor
+
+
+

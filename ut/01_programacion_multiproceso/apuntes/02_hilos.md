@@ -6,21 +6,34 @@
 
 # Hilos
 
-Cuando un Sistema Operativo crea un proceso, este le asigna un espacio de direcciones de memoria y un hilo de control. Sin embargo, con frecuencia, hay situaciones en las que es conveniente tener varios hilos de control dentro del mismo proceso que se ejecutan casi en paralelo, como si fueran procesos separados (excepto por el espacio de direcciones compartido de memoria).
+Con la introducción de los **hilos** vamos a completar la definición de **proceso**. Hasta ahora nos hemos quedado con que un proceso es un programa en ejecución bajo el control del Sistema Operativo. Así pues, el término proceso es una abstracción del Sistema Operativo que incluye: una espacio de memoria, el estado de la CPU, un identificador del proceso y un estado de ejecución (en ejecución, en espera o bloqueado).
 
-¿Por qué complicar las cosas con esta idea o concepto? Hay varias razones para que estos *miniprocesos*, conocidos como hilos, sean útiles y necesarios. Aquí tienes algunas de esas razones:
+Pues bien, cuando el Sistema Operativo crea un proceso, además de todo eso, asigna un **hilo de ejecución** a dicho proceso (el **hilo principal**). Simplificando las cosas, para entenderlo, podemos decir que a lo que llamamos hilo es al código de ejecución del proceso.
 
-- La principal razón de tener hilos es que en muchas aplicaciones se desarrollan varias actividades a la vez.
-- Algunas de ésas se pueden bloquear de vez en cuando.
-- Al descomponer una aplicación en varios hilos secuenciales que se ejecutan casi en paralelo, el modelo de programación se simplifica.
-- Los hilos comparten el mismo espacio de direcciones de memoria.
+Así pues, un proceso lo podríamos representar como se muestra en la siguiente imagen:
 
-Entonces, ¿cuándo usar multiproceso o multihilo? De forma muy básica: usaremos hilos para actividades pequeñas dentro de un mismo proceso, donde se tienen que crear y destruir hilos rápidamente; y usaremos procesos para dividir tareas pesadas dentro de un proceso que llevan mucho tiempo.
+![Proceso](./img/proceso_completo.png)
 
-> La experiencia, como en todos los ámbitos de la vida, te harán comprender cuándo usar procesos y cuando usar hilos dentro de un mismo proceso. Cuando comencemos con las prácticas lo acabarás de entender.
+## Multiproceso vs multihilo
 
-Los procesos son unidades independientes de ejecución aunque con una relación jerárquica como hemos visto. Cada proceso tiene su propio espacio de memoria independiente al que solo él puede acceder (el Sistema Operativo protege la memoria de cada proceso para que solo él pueda acceder a esa área).
+Como veremos en breve, podemos escribir programas con varios hilos de ejecución, aprovechando la concurrencia y el paralelismo. Estos hilos forman parte del mismo proceso, así que **comparten el espacio de memoria del proceso** aunque cada hilo es una unidad de ejecución separada.
 
-Crear procesos permite aprovechar las capacidades multiprocesador de los sistemas actuales, permite reducir tiempos de ejecución y dividir tareas pesadas. La contrapartida es que, desde el punto de vista del Sistema Operativo, la creación de procesos es costoso en recursos y, por tanto, no siempre resultará en una mejor opción: se puede llegar al caso que un programa multiproceso tarde más tiempo en realizar una tarea que un programa formado por un único proceso. Esto se debe a que crear un proceso también requiere tiempo de computación.
+> En Linux, podemos usar la llamada la sistema `thread` para crear hilos dentro de un proceso.
+
+Los hilos son tratados por el planificador de tareas como si fuera un proceso independiente (una especie de *miniproceso*) y, por tanto, cada hilo puede estar en uno de los tres estados ya conocidos: en ejecución, en espera o bloqueado.
+
+En la siguiente imagen se resumen las cuatro posibilidades que se pueden dar:
+
+![Procesos e hilos: opciones](./img/procesos_hilos_escenarios.png)
+
+Ahora bien, surgen dos preguntas: **¿qué diferencia hay entre crear procesos o hilos?**, **¿cuándo usar varios procesos y cuando usar varios hilos?**
+
+Crear un proceso implica que hay que asignar un espacio de direcciones de memoria al proceso, asignarle un identificador, crear el hilo principal del proceso y, en general, crear la estructura completa. Sin embargo, crear un hilo es más rápido y "sencillo" porque se hace dentro de un proceso ya creado.
 
 > Según Andrew Tanenbaum, en su libro Sistemas Operativo Modernos, la creación de hilos puede ser de 10 a 100 veces más rápido que la creación de procesos. Así pues, si se van a realizar tareas que acaban rápido quizás crear un proceso no sea conveniente.
+
+A la segunda pregunta, ¿cuándo crear procesos y cuándo crear hilos?, se puede responder de forma básica tal que así: usaremos **hilos para actividades pequeñas** dentro de un mismo proceso, donde se tienen que crear y destruir hilos rápidamente; y usaremos **procesos para** dividir **tareas pesadas** dentro de un proceso que llevan mucho tiempo.
+
+## Definición de hilo
+
+Entendido todo esto llegamos, por fin, a la **definición de hilo**: pequeña secuencia de instrucciones programadas dentro de un proceso que pueden ser manejadas independientemente por el planificador de tareas del Sistema Operativo.
