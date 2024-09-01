@@ -14,6 +14,12 @@ Así pues, un proceso lo podríamos representar como se muestra en la siguiente 
 
 ![Proceso](./img/proceso_completo.png)
 
+Donde:
+
+- El Sistema Operativo le ha asignado un PID igual a 3307 (identicador único del proceso).
+- Se ve representado el espacio de direcciones de memoria que el Sistema Operativo le ha asignado.
+- Y, por último, se tiene el hilo principal con el estado de la CPU.
+
 ## Multiproceso vs multihilo
 
 Como veremos en breve, podemos escribir programas con varios hilos de ejecución, aprovechando la concurrencia y el paralelismo. Estos hilos forman parte del mismo proceso, así que **comparten el espacio de memoria del proceso** aunque cada hilo es una unidad de ejecución separada.
@@ -32,7 +38,7 @@ Crear un proceso implica que hay que asignar un espacio de direcciones de memori
 
 > Según Andrew Tanenbaum, en su libro Sistemas Operativo Modernos, la creación de hilos puede ser de 10 a 100 veces más rápido que la creación de procesos. Así pues, si se van a realizar tareas que acaban rápido quizás crear un proceso no sea conveniente.
 
-A la segunda pregunta, ¿cuándo crear procesos y cuándo crear hilos?, se puede responder de forma básica tal que así: usaremos **hilos para actividades pequeñas** dentro de un mismo proceso, donde se tienen que crear y destruir hilos rápidamente; y usaremos **procesos para** dividir **tareas pesadas** dentro de un proceso que llevan mucho tiempo.
+A la segunda pregunta, ¿cuándo crear procesos y cuándo crear hilos?, se puede responder de forma básica tal que así: usaremos **hilos para actividades pequeñas** dentro de un mismo proceso, donde se tienen que crear y destruir hilos rápidamente; y usaremos **procesos para** dividir **tareas pesadas** dentro que llevan mucho tiempo.
 
 ## Definición de hilo
 

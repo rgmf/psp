@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="205.57306mm"
+   height="146.86703mm"
+   viewBox="0 0 205.57305 146.86703"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="procesos_hilos_escenarios.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="proceso_completo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="1.0301916"
+     inkscape:cx="398.95491"
+     inkscape:cy="310.13648"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path29" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-71.307389,-69.186198)">
+    <g
+       id="g478"
+       transform="matrix(3.0682805,0,0,3.0682805,-147.48368,-172.32184)">
+      <g
+         id="g475"
+         transform="translate(0,-2.6458334)">
+        <rect
+           style="fill:#4c784b;fill-opacity:1;stroke:none;stroke-width:0.359954;stroke-linecap:square"
+           id="rect1"
+           width="66.999435"
+           height="47.866234"
+           x="71.307388"
+           y="81.357033" />
+        <path
+           style="fill:none;fill-opacity:1;stroke:#a5ce86;stroke-width:0.803853;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           d="m 120.47141,96.658592 c 0,0 1.22115,1.498432 1.22115,2.510222 0,1.024026 -1.22563,1.873686 -1.23956,2.897686 -0.0129,0.95568 1.52812,2.38677 1.54294,3.11383 0.0248,1.22054 -1.52015,2.12334 -1.52015,3.13685 0,1.0067 1.51018,3.41596 1.51018,3.41596"
+           id="path2"
+           sodipodi:nodetypes="cssssc" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.43082px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';text-align:center;text-anchor:middle;fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:1.01282;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           x="121.25652"
+           y="90.538857"
+           id="text2"><tspan
+             sodipodi:role="line"
+             id="tspan2"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:1.01282"
+             x="121.25652"
+             y="90.538857">Hilos</tspan></text>
+        <g
+           id="g22"
+           transform="matrix(1.145776,0,0,0.94258619,41.671309,30.058841)">
+          <rect
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.211667;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect2"
+             width="14.152763"
+             height="25.390203"
+             x="29.127253"
+             y="71.235291" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:1.66132;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="M 29.120721,71.233423 H 43.263952"
+             id="path3" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,71.243784 14.145403,0.0086"
+             id="path4" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,71.243784 14.145403,0.0086"
+             id="path5" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,72.831285 14.145403,0.0086"
+             id="path6" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,74.418786 14.145403,0.0086"
+             id="path7" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,76.006287 14.145403,0.0086"
+             id="path8" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,77.593788 14.145403,0.0086"
+             id="path9" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,79.181289 14.145403,0.0086"
+             id="path10" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,80.76879 14.145403,0.0086"
+             id="path11" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,82.356291 14.145403,0.0086"
+             id="path12" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,83.943792 14.145403,0.0086"
+             id="path13" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,85.531293 14.145403,0.0086"
+             id="path14" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,87.118794 14.145403,0.0086"
+             id="path15" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,88.706295 14.145403,0.0086"
+             id="path16" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,90.293796 14.145403,0.0086"
+             id="path17" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,91.881297 14.145403,0.0086"
+             id="path18" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,93.468798 14.145403,0.0086"
+             id="path19" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="m 29.133117,95.056299 14.145403,0.0086"
+             id="path20" />
+          <path
+             style="fill:#a5ce86;fill-opacity:1;stroke:#18250f;stroke-width:0.0738188;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             d="M 29.133117,96.6438 43.27852,96.6524"
+             id="path21" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1.97036px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';text-align:center;text-anchor:middle;fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:0.821041;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           x="82.760056"
+           y="90.296448"
+           id="text22"><tspan
+             sodipodi:role="line"
+             id="tspan22"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:0.821041"
+             x="82.760056"
+             y="90.296448">Espacio de</tspan><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:0.821041"
+             x="82.760056"
+             y="92.759399"
+             id="tspan23">memoria</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.73127px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';text-align:center;text-anchor:middle;fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:1.13808;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           x="104.8016"
+           y="84.427597"
+           id="text25"><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#a5ce86;fill-opacity:1;stroke:none;stroke-width:1.13808"
+             x="104.8016"
+             y="84.427597"
+             id="tspan25">PID: 3307</tspan></text>
+        <g
+           id="g43"
+           transform="matrix(0.51891009,0,0,0.51891009,90.665453,68.270296)">
+          <rect
+             style="fill:#a5ce86;fill-opacity:1;stroke:#000000;stroke-width:0.138637;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect8"
+             width="18.990898"
+             height="12.738884"
+             x="50.036263"
+             y="97.90992" />
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0554544;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect9"
+             width="5.8722467"
+             height="0.89105242"
+             x="62.65271"
+             y="98.958794" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="62.603012"
+             y="98.617844"
+             id="text10"><tspan
+               sodipodi:role="line"
+               id="tspan10"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="62.603012"
+               y="98.617844">Contador de Programa (PC)</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0554544;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect10"
+             width="5.8722467"
+             height="0.89105242"
+             x="62.65271"
+             y="101.17698" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="62.603012"
+             y="100.83601"
+             id="text11"><tspan
+               sodipodi:role="line"
+               id="tspan11"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="62.603012"
+               y="100.83601">Registro de Instrucciones (RI)</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0554544;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect11"
+             width="5.8722453"
+             height="6.7692666"
+             x="62.65271"
+             y="103.39514" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="62.603012"
+             y="103.05419"
+             id="text12"><tspan
+               sodipodi:role="line"
+               id="tspan12"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="62.603012"
+               y="103.05419">Registros de propósito general</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0472254;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect19"
+             width="5.0007834"
+             height="0.75881672"
+             x="63.088444"
+             y="104.18217" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="65.206345"
+             y="104.04538"
+             id="text20"><tspan
+               sodipodi:role="line"
+               id="tspan20"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="65.206345"
+               y="104.04538">%rbp</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0472254;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect20"
+             width="1.9507902"
+             height="0.75881684"
+             x="63.088444"
+             y="106.40034" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="63.677475"
+             y="106.26355"
+             id="text21"><tspan
+               sodipodi:role="line"
+               id="tspan21"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="63.677475"
+               y="106.26355">%eax</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0472254;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect21"
+             width="1.9507902"
+             height="0.75881612"
+             x="63.088444"
+             y="108.06397" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="63.677475"
+             y="107.92718"
+             id="text22-3"><tspan
+               sodipodi:role="line"
+               id="tspan22-5"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="63.677475"
+               y="107.92718">%ecx</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0472254;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect26"
+             width="1.9507885"
+             height="0.75881684"
+             x="66.138443"
+             y="106.40034" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="66.72747"
+             y="106.26355"
+             id="text26"><tspan
+               sodipodi:role="line"
+               id="tspan26"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="66.72747"
+               y="106.26355">%ebx</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0472254;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect27"
+             width="1.9507885"
+             height="0.75881612"
+             x="66.138443"
+             y="108.06397" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:0.323695px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0269747;stroke-dasharray:none;stroke-opacity:1"
+             x="66.72747"
+             y="107.92718"
+             id="text27"><tspan
+               sodipodi:role="line"
+               id="tspan27"
+               style="fill:#000000;fill-opacity:1;stroke-width:0.0269747"
+               x="66.72747"
+               y="107.92718">%edx</tspan></text>
+          <path
+             id="rect28"
+             style="fill:none;stroke:#000000;stroke-width:0.0555074;stroke-linecap:square;stroke-dasharray:none"
+             d="m 52.108586,100.60583 h 2.708765 l 1.09008,1.75292 1.170362,-1.75292 h 2.543821 l -2.295739,3.89829 -2.992691,0.0146 z"
+             sodipodi:nodetypes="cccccccc" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0555074;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+             d="m 53.537178,99.637633 v 0.622317"
+             id="path28" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0555074;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+             d="m 58.310799,99.637633 v 0.622317"
+             id="path30" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.0555074;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+             d="m 55.912887,104.52226 v 0.62232"
+             id="path32" />
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.138637;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             id="rect32"
+             width="8.9195747"
+             height="2.6348529"
+             x="51.751957"
+             y="107.35612" />
+          <text
+             xml:space="preserve"
+             style="font-size:0.574725px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.239469;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             x="53.458103"
+             y="108.8517"
+             id="text32"><tspan
+               sodipodi:role="line"
+               id="tspan32"
+               style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.239469"
+               x="53.458103"
+               y="108.8517">Unidad de Control</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:0.574725px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.239469;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+             x="55.39901"
+             y="103.41716"
+             id="text33"><tspan
+               sodipodi:role="line"
+               id="tspan33"
+               style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.239469"
+               x="55.39901"
+               y="103.41716">ALU</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-size:1.53616px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#aaaba9;fill-opacity:1;stroke:none;stroke-width:0.64012;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           x="121.25008"
+           y="94.022202"
+           id="text44"><tspan
+             sodipodi:role="line"
+             id="tspan44"
+             style="fill:#aaaba9;fill-opacity:1;stroke:none;stroke-width:0.64012"
+             x="121.25008"
+             y="94.022202">Principal</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:1.53616px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:center;text-anchor:middle;fill:#aaaba9;fill-opacity:1;stroke:none;stroke-width:0.64012;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           x="121.25008"
+           y="116.81024"
+           id="text45"><tspan
+             sodipodi:role="line"
+             id="tspan45"
+             style="fill:#aaaba9;fill-opacity:1;stroke:none;stroke-width:0.64012"
+             x="121.25008"
+             y="116.81024">Estado</tspan></text>
+        <path
+           style="fill:#a5ce86;fill-opacity:1;stroke:#a5ce86;stroke-width:0.102579;stroke-linecap:square;stroke-dasharray:0.718044;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 114.80398,92.638459 V 128.36639"
+           id="path45" />
+        <path
+           style="fill:#a5ce86;fill-opacity:1;stroke:#a5ce86;stroke-width:0.102579;stroke-linecap:square;stroke-dasharray:0.718044;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 128.11805,92.638459 V 128.36639"
+           id="path46" />
+      </g>
+    </g>
+  </g>
+</svg>
