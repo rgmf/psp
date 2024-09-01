@@ -32,7 +32,8 @@
         </p>
         <p>
           2. Hilos<br>
-          2.1. Procesos vs hilos<br>
+          2.1. Multiproceso vs multihilo<br>
+          2.2. Definición de hilo<br>
         </p>
       </td>
       <td>
