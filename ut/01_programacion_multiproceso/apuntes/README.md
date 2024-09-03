@@ -35,6 +35,9 @@
           2.1. Multiproceso vs multihilo<br>
           2.2. Definición de hilo<br>
         </p>
+        <p>
+          3. Caso práctico: ejecución concurrente.
+        </p>
       </td>
       <td>
         CE1a. Se han reconocido las características de la programación concurrente y sus ámbitos de aplicación.<br>

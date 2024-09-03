@@ -19,12 +19,12 @@ Los **procesos están bajo el control del Sistema Operativo** que será el encar
 
 ## Gestión de procesos por el Sistema Operativo
 
-El Sistema Operativo gestiona los procesos por medio de lo que se conoce como **planificador de procesos**. Este planificador es el encargado de ofrecer tiempo de ejecución a cada proceso, para lo cual necesita mantener una estructura de procesos en la que por cada proceso se almacena::
+El Sistema Operativo gestiona los procesos por medio de lo que se conoce como **planificador de procesos**. Este planificador es el encargado de ofrecer tiempo de ejecución a cada proceso, para lo cual necesita mantener una estructura de procesos en la que por cada proceso se almacena:
 
 - Un **PID**: cada proceso tiene un **Process IDentifier** o PID que lo identifica de forma única.
 - Un espacio de **direcciones de memoria** y lista de ubicaciones que va desde un mínimo a un máximo donde el proceso puede leer y/o escribir datos en memoria.
 - El contenido de los **resitros de la CPU** para que cuando se vuelva a otorgar tiempo de ejecución se pueda restaurar el estado en que se encontraba la CPU en el momento en que se cambió por otro proceso.
-- **Otros recursos** como ficheros que tiene abiertos.
+- **Otros recursos** como ficheros que tiene abiertos, "relaciones" con otros procesos, estadísticas de uso de CPU, recursos de Entrada/Salida ocupados, estado en que se encuentra, etc.
 
 ## Estados de un proceso
 
@@ -41,6 +41,8 @@ El planificador de procesos del Sistema Operativo aplica ciertos algoritmos para
 ![Estados de un proceso](./img/estados_procesos.png)
 
 En esta **maquinaria de estados** vemos como el planificador va *durmiendo* y *despertando* procesos para alternarlos entre los estados de **Ejecución** y **Preparado**. Además, cuando un proceso necesita un recurso de Entrada/Salida (por ejemplo, abrir un fichero) es *suspendido* y pasa al estado de **Bloqueado**. Una vez está el recurso de Entrada/Salida listo es devuelto al estado de **Preparado**.
+
+> Cuando un Sistema Operativo cambia de proceso en la CPU, se denomina **cambio de contexto** ya que tiene que modificar el contexto en que se encuentra la CPU para empezar a ejecutar el nuevo proceso.
 
 ## Subprocesos
 
