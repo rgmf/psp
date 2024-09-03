@@ -45,7 +45,7 @@ Dadas estas condiciones, vamos a responder a estas cuestiones:
 
 Podemos construir un diagrama en cuyo eje X tenemos el número de ciclos y en el eje Y tenemos los procesos:
 
-![Caso práctico resuelto: programacion concurrente](caso_practico_concurrencia.png)
+![Caso práctico resuelto: programacion concurrente](./img/caso_practico_concurrencia.png)
 
 Las respuestas a las preguntas anteriores, una vez desarrollado el diagrama, son:
 
