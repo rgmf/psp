@@ -36,7 +36,9 @@
           2.2. Definición de hilo<br>
         </p>
         <p>
-          3. Caso práctico: ejecución concurrente.
+          3. Caso práctico: ejecucion concurrente y paralela<br>
+          3.1. Ejecución concurrente<br>
+          3.2. Ejecución paralela<br>
         </p>
       </td>
       <td>

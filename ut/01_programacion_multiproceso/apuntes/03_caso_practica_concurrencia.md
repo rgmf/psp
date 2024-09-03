@@ -4,7 +4,7 @@
   - **CE1a**. Se han reconocido las características de la programación concurrente y sus ámbitos de aplicación.
   - **CE1c**. Se han analizado las características de los procesos y de su ejecución por el sistema operativo.
 
-# Caso práctico
+# Caso práctico: ejecución concurrente y paralela
 
 En este caso práctico vamos a hacer de "Sistema Operativo" en la ejecución de tres procesos que vamos a llamar `P1`, `P2` y `P3`.
 
@@ -26,7 +26,7 @@ Dependiendo de la frecuencia, cada ciclo tiene una duración determinada que ron
 
 Entendido todo esto, podemos pasar al primero de los casos prácticos.
 
-## Programación concurrente
+## Ejecución concurrente
 
 En un sistema de una sola CPU tenemos que ejecutar los tres procesos siguientes:
 
