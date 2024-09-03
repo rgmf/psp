@@ -59,3 +59,4 @@
 
 1. [Procesos](01_procesos.md)
 2. [Hilos](02_hilos.md)
+3. [Caso práctico: ejecución concurrente y paralela](03_caso_practico_concurrencia.md)
