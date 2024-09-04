@@ -11,3 +11,11 @@
     - h) Se han depurado y documentado las aplicaciones desarrolladas.
 *** Objetivos generales: b, e, i, j, n, ñ
 *** Competencias: n, t, w
+
+* 2.- Programación multihilo
+
+* 3.- Networking y sockets
+
+* 4.- Programación de servicio
+
+* 5.- Técnicas de programación segura

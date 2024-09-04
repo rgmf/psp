@@ -9,7 +9,7 @@
       <th>Temporalización</th><td>TODO</td>
     </tr>
     <tr>
-      <th>Objetivos generales</th><td>b, e, i, j, n, ñ</td>
+      <th>Objetivos generales</th><td>b, e, i, j, l, n, ñ</td>
     </tr>
     <tr>
       <th>Competencias</th><td>n, t, w</td>
