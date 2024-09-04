@@ -12,7 +12,7 @@ Pero antes: las CPU usan un reloj que genera ciclos de reloj, una frecuencia que
 
 De ahí que una de las cracterísticas de las CPU es la frecuencia medida en múltiplos del Hz (Hertzio). Hoy en día ese múltiplo es el del GHz (Giga Hertzio). Por ejemplo, el *Intel i5 1335U* trabaja a una frecuencia de 3,30 GHZ (4,40 GHz en modo *Turbo*).
 
-> Recuerda que 1 GHz son 1 000 000 000 Hz. Eso significa, que la CPU *Intel i5 1335U* genera 1 000 000 000 ciclos cada segundo. Eso, a su vez, significa que si puede ejecutar una instrucción por ciclo, entonces, es capaz de ejecutar 1 000 000 000 instrucciones por segundo.
+> Recuerda que 1 GHz son 1 000 000 000 Hz. Eso significa, que la CPU *Intel i5 1335U* genera 3 300 000 000 ciclos cada segundo. Eso, a su vez, significa que si pudiera ejecutar una instrucción por ciclo, entonces, sería capaz de ejecutar 3 300 000 000 instrucciones por segundo.
 
 Una frecuencia se puede representar por medio de una onda sinusoidal. En el siguiente diagrama puedes ver representadas 5 frecuencias (el diagrama se ha obtenido de la [Wikipedia](https://es.wikipedia.org/wiki/Frecuencia)):
 
