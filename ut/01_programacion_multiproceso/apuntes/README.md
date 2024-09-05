@@ -40,6 +40,14 @@
           3.1. Ejecución concurrente<br>
           3.2. Ejecución paralela<br>
         </p>
+        <p>
+          4. Ejercicios<br>
+        </p>
+        <p>
+          5. Procesos en Kotlin<br>
+          5.1. La clase Runtime<br>
+          5.2. La clase Process<br>
+        </p>
       </td>
       <td>
         CE1a. Se han reconocido las características de la programación concurrente y sus ámbitos de aplicación.<br>
