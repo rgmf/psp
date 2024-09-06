@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="145.9502mm"
+   height="111.0052mm"
+   viewBox="0 0 145.9502 111.0052"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="jerarquia_procesos_ejemplo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="0.97667673"
+     inkscape:cx="394.19389"
+     inkscape:cy="287.1984"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker13"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path13" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.219818,-78.622898)">
+    <circle
+       style="fill:#15521f;fill-opacity:1;stroke-width:0.221974;stroke-linecap:square;stroke-dasharray:0.665902"
+       id="path1"
+       cx="97.998024"
+       cy="100.1647"
+       r="17.189205" />
+    <g
+       id="g9"
+       transform="matrix(0.93111227,0,0,0.93111227,7.8227518,10.185802)">
+      <text
+         xml:space="preserve"
+         style="font-size:8.82019px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.331125;stroke-linecap:square;stroke-dasharray:0.993374"
+         x="107.63944"
+         y="96.394539"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.331125"
+           x="107.63944"
+           y="96.394539">main</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.97311px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.149159;stroke-linecap:square;stroke-dasharray:0.447475"
+         x="102.75987"
+         y="103.22159"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="stroke-width:0.149159"
+           x="102.75987"
+           y="103.22159">padre</tspan></text>
+    </g>
+    <circle
+       style="fill:#152a52;fill-opacity:1;stroke-width:0.221974;stroke-linecap:square;stroke-dasharray:0.665902"
+       id="circle2"
+       cx="48.494446"
+       cy="169.14449"
+       r="17.189205" />
+    <g
+       id="g7"
+       transform="matrix(0.93111227,0,0,0.93111227,7.5905598,10.114407)">
+      <text
+         xml:space="preserve"
+         style="font-size:5.30737px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.199248;stroke-linecap:square;stroke-dasharray:0.597742"
+         x="56.87849"
+         y="167.62199"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="tspan3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.199248"
+           x="56.87849"
+           y="167.62199">Addition</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.29021px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.161062;stroke-linecap:square;stroke-dasharray:0.483185"
+         x="51.620232"
+         y="177.39235"
+         id="text4"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           style="stroke-width:0.161062"
+           x="51.620232"
+           y="177.39235">hijo 1</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:8.21257px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.308306;stroke-linecap:square;stroke-dasharray:0.924936"
+       x="167.85074"
+       y="172.42473"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.308306"
+         x="167.85074"
+         y="172.42473">Addition</tspan></text>
+    <circle
+       style="fill:#152a52;fill-opacity:1;stroke-width:0.221974;stroke-linecap:square;stroke-dasharray:0.665902"
+       id="circle6"
+       cx="147.81476"
+       cy="169.14449"
+       r="17.189205" />
+    <g
+       id="g8"
+       transform="matrix(0.93111227,0,0,0.93111227,14.460218,10.114407)">
+      <text
+         xml:space="preserve"
+         style="font-size:5.30737px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.199248;stroke-linecap:square;stroke-dasharray:0.597742"
+         x="156.16887"
+         y="167.62199"
+         id="text6"><tspan
+           sodipodi:role="line"
+           id="tspan6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.199248"
+           x="156.16887"
+           y="167.62199">Addition</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.29021px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.161062;stroke-linecap:square;stroke-dasharray:0.483185"
+         x="150.91061"
+         y="177.39235"
+         id="text7"><tspan
+           sodipodi:role="line"
+           id="tspan7"
+           style="stroke-width:0.161062"
+           x="150.91061"
+           y="177.39235">hijo 2</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.739068;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker13)"
+       d="m 98.169904,117.26896 -39.975542,32.7616"
+       id="path11"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.739068;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 98.104168,117.26896 39.975522,33.25429"
+       id="path12"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.96715px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';text-align:end;text-anchor:end;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.495898;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="37.429073"
+       y="131.91978"
+       id="text17"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.495898"
+         x="37.429073"
+         y="131.91978"
+         id="tspan17">ProcessBuilder</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.495898"
+         x="37.429073"
+         y="136.91747"
+         id="tspan18">      .start()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.96715px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono Bold';text-align:end;text-anchor:end;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.495898;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="122.66846"
+       y="131.91978"
+       id="text20"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.495898"
+         x="122.66846"
+         y="131.91978"
+         id="tspan19">ProcessBuilder</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.495898"
+         x="122.66846"
+         y="136.91747"
+         id="tspan20">      .start()</tspan></text>
+  </g>
+</svg>

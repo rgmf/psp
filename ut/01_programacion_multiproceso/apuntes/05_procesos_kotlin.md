@@ -131,16 +131,21 @@ println(output)
 
 Hasta ahora hemos creado procesos que ejecutan comandos del sistema. Veamos, ahora, cómo crear un proceso para ejecutar un ejecutable de Kotlin/Java (un `class` o código compilado para la máquina virtual de java o *JVM*).
 
-Para ejecutar un `class` vamos a necesitar que dicho `class` tenga el punto de entrada `main`. De ahí que, como ves en el siguiente código, tengamos la función `main` como entrada al programa principal (hilo principal del proceso padre) y el método `main` en la clase que queremos ejecutar en un nuevo proceso hijo:
+Para ejecutar un `class` vamos a necesitar que dicho `class` tenga el punto de entrada `main`. De ahí que, como ves en el siguiente código, tengamos la función `main` como entrada al programa principal (hilo principal del proceso padre) y el método `main` en la clase que queremos ejecutar en un nuevo proceso hijo (el código está documentado para que se comprenda):
 
 > La *anotación* `@JvmStatic` convierte ese método en un método estático en el sentido tradicional de Java.
 
 ```kotlin
 package com.proferoman
 
-import java.time.Duration
-import kotlin.random.Random
-
+/**
+ * Clase que se ejecutará en un proceso nuevo.
+ *
+ * Tiene un método que suma un rango de números llamado "add".
+ *
+ * Se ha añadido, además, un companion object con el método estático "main"
+ * para que se pueda ejecutar como un proceso independiente.
+ */
 class Addition {
     fun add(n1: Int, n2: Int): Int {
         var result = 0
@@ -161,43 +166,124 @@ class Addition {
             val addition = Addition()
             val n1 = Integer.parseInt(args[0])
             val n2 = Integer.parseInt(args[1])
-            val result = addition.add(n1, n2);
-            print(result);
+            addition.add(n1, n2);
         }
     }
 }
 
-fun launchAdder(n1: Int, n2: Int): Int {
+/**
+ * Función usada para crear un proceso que ejecute la clase Addition anterior.
+ *
+ * Al ejecutar la clase Addition como un nuevo proceso, se lanzará el método estático
+ * main, como si de un programa independiente se tratara.
+ */
+fun launchAdder(n1: Int, n2: Int) {
     val className = "com.proferoman.Addition"
     val classPath = System.getProperty("java.class.path")
 
-    try {
-        val processBuilder = ProcessBuilder(
-            "kotlin", "-cp", classPath, className,
-            n1.toString(), n2.toString()
-        )
-        val addProcess = processBuilder
-            .redirectErrorStream(true)
-            .start()
-
-        // Equivale a un .waitFor() y bloquea el hilo principal
-        val addOutput = addProcess.inputStream.bufferedReader().readText()
-
-        return addOutput.toInt()
-    } catch (e: Exception) {
-        e.printStackTrace()
-    }
-    return 0
+    // Crea objeto ProcessBuilder con el que crear un nuevo proceso.
+    val processBuilder = ProcessBuilder(
+        "kotlin", "-cp", classPath, className,
+        n1.toString(), n2.toString()
+    )
+    // El "inheritIO" permite que el proceso hijo redirija la E/S al padre.
+    // Así podemos ver los mensajes "prints" de los hijos.
+    val addProcess = processBuilder
+        .inheritIO()
+        .start()
 }
 
+/**
+ * Punto de entrada al proceso padre (programa principal).
+ */
 fun main() {
-    val result1 = launchAdder(1, 51)
-    val result2 = launchAdder(51, 100)
-
-    println("Result 1: $result1")
-    println("Result 2: $result2")
-    println("Addition: ${result1 + result2}")
+    launchAdder(1, 510000000)
+    launchAdder(1, 2)
 }
 ```
 
-## Sincronización padre/hijo
+> Si ejecutas el programa no vas a ver nada por pantalla. Los procesos que se crean calculan la suma del rango indicado y nada más. Luego veremos cómo obtener y pasar resultados desde un proceso hijo al proceso padre.
+
+¿Cuántos procesos se crean al ejecutar el programa anterior? La respuesta es: 3 procesos. El proceso padre y los dos (hijos) que se crean al llamar a la función `launchAdder`. Esta sería la jerarquía de procesos:
+
+![Jerarquía de procesos ejemplo Kotlin](./img/jerarquia_procesos_ejemplo.png)
+
+Así pues, hay tres procesos cuya ejecución entra a ser planificada por el Sistema Operativo, así que no podemos conocer por adelantado qué proceso acabará antes que otro, dependerá de la planificación que haga dicho Sistema Operativo.
+
+## Mostrar información de los procesos: prueba de concurrencia
+
+Vamos a poner algunos `prints` al programa anterior y a modificar alguna cosa para que veamos que existe concurrencia entre los 3 procesos que se ejecutan. De hecho, en función del equipo en el que lo ejecutes y las condiciones de ejecución del ordenador, unos procesos acabarán antes que otros e, incluso, si lo ejecutamos varias veces el orden podría variar.
+
+Este ejemplo también sirve para que veas un ejemplo de **cómo obtener información de un proceso**. Para ello, como ves debajo, se puede **usar la clase `ProcessHandle`** para mostrar el **PID** del proceso actual (*current*), por ejemplo.
+
+Haz pruebas con este código. Leélo y trata de entenderlo. Solo he añadidoo algunos `prints` para ver información de los procesos que se ejecutan y ver cuándo empiezan y acaban su ejecución:
+
+```kotlin
+package com.proferoman
+
+class Addition {
+    fun add(n1: Int, n2: Int): Int {
+        var result = 0
+        for (i in n1..n2) {
+            result += i
+        }
+        return result
+    }
+
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            println("Empieza proceso hijo: " + ProcessHandle.current().pid())
+            if (args.isEmpty() || args.size < 2) {
+                println("Two numbers are needed")
+                return
+            }
+
+            val addition = Addition()
+            val n1 = Integer.parseInt(args[0])
+            val n2 = Integer.parseInt(args[1])
+            addition.add(n1, n2);
+
+            println("Finaliza proceso hijo: " + ProcessHandle.current().pid())
+        }
+    }
+}
+
+fun launchAdder(n1: Int, n2: Int) {//: Int {
+    val className = "com.proferoman.Addition"
+    val classPath = System.getProperty("java.class.path")
+
+    val processBuilder = ProcessBuilder(
+        "kotlin", "-cp", classPath, className,
+        n1.toString(), n2.toString()
+    )
+    val addProcess = processBuilder
+        .inheritIO()
+        .start()
+}
+
+fun main() {
+    println("Empieza el proceso padre con PID: " + ProcessHandle.current().pid())
+    launchAdder(1, 510000000)
+    launchAdder(1, 2)
+    println("Acaba el proceso padre con PID: " + ProcessHandle.current().pid())
+}
+```
+
+Una posible salida, tras ejecutar este programa, sería:
+
+```shell
+Empieza el proceso padre con PID: 43795
+Acaba el proceso padre con PID: 43795
+Empieza proceso: 43861
+Empieza proceso: 43866
+Finaliza proceso: 43866
+Finaliza proceso: 43861
+```
+
+Donde ves que:
+
+- Acaba el proceso padre antes que los hijos.
+- Acaba el segundo proceso hijo antes que el primero en ser creado.
+
+Esta es una prueba de que el Sistema Operativo ha manejado tres procesos y, además, han sido ejecutados de forma concurrente y sin una secuencia dada.
