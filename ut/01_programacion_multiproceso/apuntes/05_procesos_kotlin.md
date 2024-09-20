@@ -12,7 +12,7 @@ La JVM (*Java Virtual Machine*) se ha diseñado para soportar programación conc
 
 - La funcionalidad básica se proporciona a través de la clase `Process`, que es abstracta y no se pueden crear objetos de ella. Hay que usar subclases como veremos más adelante.
 
-- La funcionalidad básica para los hilos se proporciona a través de la clse `Thread` (que abordaremos en el tema siguiente).
+- La funcionalidad básica para los hilos se proporciona a través de la clase `Thread` (que abordaremos en el tema siguiente).
 
 - El paquete `java.util.concurrent` proporciona funcionalidd de alto nivel para programación concurrente.
 
@@ -38,7 +38,7 @@ println("PID parent process: ${ProcessHandle.current().pid()}")
 println("PID child process: ${childProcess.pid()}")
 ```
 
-Si deseas obtener el resultado del proceso hijo, lo tiens que hacer a través de la entrada/salida estándar. Lo que imprime por pantalla el proceso hijo puede ser capturado por el proceso padre. Para ello hay que utilizar *input stream* como se ve en este ejemplo, donde he completado el anterior para recuperar la salida del proceso hijo:
+Si deseas obtener el resultado del proceso hijo, lo tienes que hacer a través de la entrada/salida estándar. Lo que imprime por pantalla el proceso hijo puede ser capturado por el proceso padre. Para ello hay que utilizar *input stream* como se ve en este ejemplo, donde he completado el anterior para recuperar la salida del proceso hijo:
 
 ```kotlin
 // Obtenemos el objeto Runtime del entorno de ejecución actual.
@@ -94,9 +94,9 @@ println(output)
 
 ## Configurar entorno de ejecución
 
-Cuando ejecutamos un proceso, a veces, será necesario hacerlo desde un directorio de trabajo concreto; o necesitaremos cargar las variables de entorno; o un ejecutable conreto; etc.
+Cuando ejecutamos un proceso, a veces, será necesario hacerlo desde un directorio de trabajo concreto; o necesitaremos cargar las variables de entorno; o un ejecutable conreto; etc. A todo este contexto, a toda esta información, se le conoce como **entorno de ejecución** del proceso.
 
-Todas este entorno lo podemos obtener con la el método `System.getProperty`. Por ejemplo:
+La información del entorno en que se ejecuta un proceso lo podemos obtener con el método `System.getProperty`. Por ejemplo:
 
 - `System.getProperty("java.class.path")` para obtener el `PATH` de la *Java Virtual Machine*.
 - `System.getProperty("java.home")` para obtener el directorio donde está instalado la *Java Virtual Machine*.
@@ -188,6 +188,8 @@ fun launchAdder(n1: Int, n2: Int) {
     )
     // El "inheritIO" permite que el proceso hijo redirija la E/S al padre.
     // Así podemos ver los mensajes "prints" de los hijos.
+    // Este "inheritIO" lo tendrás que quitar si quieres capturar la salida desde
+    // el padre.
     val addProcess = processBuilder
         .inheritIO()
         .start()
@@ -197,7 +199,7 @@ fun launchAdder(n1: Int, n2: Int) {
  * Punto de entrada al proceso padre (programa principal).
  */
 fun main() {
-    launchAdder(1, 510000000)
+    launchAdder(1, 100_000_000)
     launchAdder(1, 2)
 }
 ```
@@ -249,7 +251,7 @@ class Addition {
     }
 }
 
-fun launchAdder(n1: Int, n2: Int) {//: Int {
+fun launchAdder(n1: Int, n2: Int) {
     val className = "com.proferoman.Addition"
     val classPath = System.getProperty("java.class.path")
 
@@ -264,7 +266,7 @@ fun launchAdder(n1: Int, n2: Int) {//: Int {
 
 fun main() {
     println("Empieza el proceso padre con PID: " + ProcessHandle.current().pid())
-    launchAdder(1, 510000000)
+    launchAdder(1, 100_000_000)
     launchAdder(1, 2)
     println("Acaba el proceso padre con PID: " + ProcessHandle.current().pid())
 }
@@ -287,3 +289,19 @@ Donde ves que:
 - Acaba el segundo proceso hijo antes que el primero en ser creado.
 
 Esta es una prueba de que el Sistema Operativo ha manejado tres procesos y, además, han sido ejecutados de forma concurrente y sin una secuencia dada.
+
+## Manejando procesos: métodos útiles de la clase Process
+
+Ya hemos visto, en los ejemplos anteriores, varios métodos de la clase `Process`. Aquí me voy a centrar en una serie de métodos útiles para el manejos de los procesos hijos que se crean desde un padre.
+
+Aquí tienes una introducción a los métodos que te voy a explicar en este apartado:
+
+- `destroy(): Unit`: este método permite acabar con un proceso hijo de forma limpia y ordenada.
+- `destroyFocibly(): Process`: con este método terminas con el proceso inmediatamente.
+- `exitValue(): Int`: devuelve el valor de salida y código de retorno.
+
+> Todos los procesos terminan con un código (número entero) que indica cómo fue la ejecución de dicho proceso. Un valor igual a `0` indica que el proceso termino sin errores. Cualquier otro valor es un indicador de lo contrario.
+
+- `isAlive(): Boolean`: este método permite comprobar si un proceso sigue ejecutándose.
+- `waitFor(): Int`: con este método detenemos al proceso padre hasta que el hijo termine.
+- `waitFor(timeout: Long, unit: TimeUnit): boolean`: con este método detenemos al proceso padre hasta que termine el proceso hijo o hasta que pase el tiempo indicado como argumentos. Devuelve `true` si el proceso termino antes de dicho tiempo o `false` en otro caso.

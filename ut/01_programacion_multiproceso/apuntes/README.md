@@ -68,3 +68,5 @@
 1. [Procesos](01_procesos.md)
 2. [Hilos](02_hilos.md)
 3. [Caso práctico: ejecución concurrente y paralela](03_caso_practico_concurrencia.md)
+4. [Ejercicios](04_ejercicios.md)
+5. [Procesos en Kotlin](05_procesos_kotlin.md)
