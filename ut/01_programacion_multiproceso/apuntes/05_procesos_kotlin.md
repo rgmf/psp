@@ -305,3 +305,50 @@ Aquí tienes una introducción a los métodos que te voy a explicar en este apar
 - `isAlive(): Boolean`: este método permite comprobar si un proceso sigue ejecutándose.
 - `waitFor(): Int`: con este método detenemos al proceso padre hasta que el hijo termine.
 - `waitFor(timeout: Long, unit: TimeUnit): boolean`: con este método detenemos al proceso padre hasta que termine el proceso hijo o hasta que pase el tiempo indicado como argumentos. Devuelve `true` si el proceso termino antes de dicho tiempo o `false` en otro caso.
+
+Aquí tienes un ejemplo donde se utiliza el método `isAlive` para esperar que tres procesos terminen sus tareas. El programa imprime por pantalla el estado en que se encuentran los procesos. Te animo a leer el código, ejecutar el programa y tratar de comprender qué está pasando en cada momento:
+
+```kotlin
+fun launchProcess() {
+    val homeDirectory = System.getProperty("user.home")
+    val javaDirectory = System.getProperty("java.home")
+
+    val pb1 = ProcessBuilder("find", homeDirectory, "-name", "\"*.*\"", "-print")
+    val pb2 = ProcessBuilder("find", javaDirectory, "-name", "\"*.*\"", "-print")
+    val pb3 = ProcessBuilder("bash", "-c", """
+        for i in {1..5}; do
+            sleep 1
+        done
+        """.trimIndent())
+
+    val p1 = pb1.start()
+    val p2 = pb2.start()
+    val p3 = pb3.start()
+
+    while (p1.isAlive || p2.isAlive || p3.isAlive) {
+        print("Esperando procesos...")
+        if (p1.isAlive) {
+            print(" p1")
+        }
+        if (p2.isAlive) {
+            print(" p2")
+        }
+        if (p3.isAlive) {
+            print(" p3")
+        }
+        println()
+        Thread.sleep(1000)
+    }
+
+    println("Todos los procesos han terminado")
+}
+
+fun main() {
+    launchProcess()
+    println("El proceso padre terminó")
+}
+```
+
+### Ejercicio propuesto
+
+Modifica el programa anterior para acabar con los procesos que siguen ejecutándose depués de 3 segundos.
