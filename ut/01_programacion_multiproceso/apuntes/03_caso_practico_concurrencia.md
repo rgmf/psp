@@ -20,8 +20,6 @@ Una frecuencia se puede representar por medio de una onda sinusoidal. En el sigu
 
 La frecuencia representada en color rojo es la menor y la representada por el color rosa es la mayor. Así, en el contexto de las CPU, llamamos ciclo a cada una de las repeticiones que se ven en la onda sinusoidal:
 
-![Ciclo en una frecuencia](./img/diferentes_frecuencias.png)
-
 Dependiendo de la frecuencia, cada ciclo tiene una duración determinada que ronda, hoy en día, los *nanosegundos*.
 
 Entendido todo esto, podemos pasar al primero de los casos prácticos.
@@ -51,7 +49,7 @@ Las respuestas a las preguntas anteriores, una vez desarrollado el diagrama, son
 
 - `P1` termina a los 420 ciclos; `P2` termina a los 300 ciclos; y `P3` termina a los 480 ciclos.
 - El Sistema Operativo ha tenido que hacer 12 cambios de contexto.
-- El Sistema Operativo ha necesitado un tota lde 120 ciclos de CPU.
+- El Sistema Operativo ha necesitado un total de 120 ciclos de CPU.
 - La CPU ha necesitado 480 ciclos para completar la ejecución de los tres procesos.
 
 ## Programación paralela (reto)
