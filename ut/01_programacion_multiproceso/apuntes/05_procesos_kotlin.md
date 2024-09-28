@@ -290,6 +290,57 @@ Donde ves que:
 
 Esta es una prueba de que el Sistema Operativo ha manejado tres procesos y, además, han sido ejecutados de forma concurrente y sin una secuencia dada.
 
+> ¡¡¡OJO!!! Hay que entender que es el proceso padre el que, en última instancia, muestra por pantalla la información que le llega de los hijos. Si el proceso padre acaba antes que algún hijo, entonces la información de ese hijo no se mostrará por pantalla. Más adelante veremos cómo sincronizar padre-hijos de manera que el padre se mantenga en ejecución hasta que todos los hijos acaben. De momento, a modo de "chapuza" puedes poner el padre a "dormir", 5 segundos por ejemplo, con un `Thread.sleep(5000)`.
+
+### Ejercicio propuesto
+
+Crea un proyecto en Kotlin llamado `IntroProcess` en el que el proceso padre inicie dos procesos:
+
+- El primero de los procesos obtendrá los personajes de la serie Rick and Morty a través de la API [pública de Rick and Morty](https://rickandmortyapi.com) y cuyo endpoint para la obtención de los personajes es: *https://rickandmortyapi.com/api/character*
+
+- El segundo de los procesos obtendrá información de una IP pública que le pases a través de [esta API pública](https://ip-api.com) y cuyo *endpoint* es: *https://ip-api.com/<ip>* donde `<ip>` es la IP pública para que deseas la información. Puedes probar con la IP de la Conselleria `195.77.20.100`, por ejemplo.
+
+Ambos procesos tienen que mostrar por pantalla:
+
+- su `PID` al inicio de su ejecución, y
+- el resultado obtenido o el error.
+
+Un ejemplo de salida:
+
+```text
+Comienza el proceso 116595: https://rickandmortyapi.com/api/character
+Comienza el proceso 116614: http://ip-api.com/json/
+{"status":"success","country":"Spain","countryCode":"ES","region":"VC","regionName":"Valencia","city":"Valencia","zip":"46018","lat":39.4759,"lon":-0.3687,"timezone":"Europe/Madrid","isp":"TDENET (Red de servicios IP)","org":"Generalitat Valenciana","as":"AS3352 TELEFONICA DE ESPANA S.A.U.","query":"195.77.20.100"}
+{"info":{"count":826,"pages":42,"next":"https://rickandmortyapi.com/api/character?page=2","prev":null},"results":[{"id":1,"name":"Rick Sanchez","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"location":{"name":"Citadel of Ricks","url":"https://rickandmortyapi.com/api/location/3"},"image": ...
+```
+
+Cuando termines vas a poder observar como **acaba el padre antes que algún hijo y no se mostrará toda la salida**.
+
+Por último, te muestro un ejemplo muy básico que te permite hacer peticiones a APIs desde Kotlin usando el paquete `java.net` donde la variable `endpoint` es un `String` con la URL:
+
+```kotlin
+val uri = URI.create(endpoint)
+val url = URL.of(uri, null)
+val connection = url.openConnection() as HttpURLConnection
+
+try {
+    connection.requestMethod = "GET"
+    connection.connect()
+
+    val responseCode = connection.responseCode
+    if (responseCode == HttpURLConnection.HTTP_OK) {
+        val stream = connection.inputStream
+        println(stream.bufferedReader().use { it.readText() })
+    } else {
+        println("HTTP error code: $responseCode")
+    }
+} finally {
+    connection.disconnect()
+}
+```
+
+> La solución la puedes encontra en la carpeta `programas` de estos apuntes, pero no lo mires, sé fuerte y trata de hacerlo por ti mismo/a :P y una vez termines contrasta tu solución con esta.
+
 ## Manejando procesos: métodos útiles de la clase Process
 
 Ya hemos visto, en los ejemplos anteriores, varios métodos de la clase `Process`. Aquí me voy a centrar en una serie de métodos útiles para el manejos de los procesos hijos que se crean desde un padre.
