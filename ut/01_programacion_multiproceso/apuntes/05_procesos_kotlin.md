@@ -20,6 +20,8 @@ Centrándonos en los procesos (y la clase `Process`) tenemos dos métodos, de se
 
 # La clase Runtime
 
+> Los ejemplos que vienen a continuación funcionan en GNU/Linux. Si quieres hacerlos funcionar en Windows tendrás que cambiar `arrayOf("ls", "-l")` por `arrayOf("cmd.exe", "/c", "dir")` que es el equivalente a mostrar los directorios y archivos que hay en el directorio de trabajo, en la terminal de GNU/Linux usamos `ls` y en la de Windows `dir`.
+
 Esta clase porporiona información del entorno de ejecución del proceso y nos permite interactura con él. Además, el método `exec()` permite lanzar nuevos procesos (que serán hijos del actual, del que hace la llamada).
 
 Un ejemplo de uso lo tienes en el siguiente ejemplo, comentado para que se entienda cada instrucción:
@@ -72,6 +74,7 @@ Veamos, directamente, cómo usar `ProcessBuilder` para escribir el mismo program
 // Creamos objeto ProcessBuilder.
 // Los comandos se indican en una lista de "vargs".
 val processBuilder = ProcessBuilder("ls", "-l")
+// val processBuilder = ProcessBuilder("cmd.exe", "/c", "dir") <-- En Windows
 
 // Se crea y ejectua el proceso hijo.
 val childProcess = processBuilder.start()
@@ -94,6 +97,8 @@ println(output)
 
 ## Configurar entorno de ejecución
 
+> Estos ejemplos funcionan en GNU/Linux. Si quieres que funcionen en Windows tienes que cambiar la línea comentada que finaliza con `<-- Windows` por la que hay justo arriba.
+
 Cuando ejecutamos un proceso, a veces, será necesario hacerlo desde un directorio de trabajo concreto; o necesitaremos cargar las variables de entorno; o un ejecutable conreto; etc. A todo este contexto, a toda esta información, se le conoce como **entorno de ejecución** del proceso.
 
 La información del entorno en que se ejecuta un proceso lo podemos obtener con el método `System.getProperty`. Por ejemplo:
@@ -108,6 +113,7 @@ Si quieres conocer todo el entorno en el que se ejecuta un proceso, ejecuta este
 
 ```kotlin
 val pb = ProcessBuilder("ls")
+// val pb = ProcessBuilder("cmd.exe", "/c", "dir") <-- En Windows
 val childProcess = pb.start()
 
 pb.environment().forEach { k, v ->
@@ -120,6 +126,7 @@ Para ver cómo configurar, en la práctica, un entorno concreto, veamos cómo ej
 ```kotlin
 val userDir = System.getProperty("user.home")
 val processBuilder = ProcessBuilder("ls", userDir)
+// val processBuilder = ProcessBuilder("cmd.exe", "/c", "dir", userDir) <-- En Windows
 
 val childProcess = processBuilder.start()
 val output = childProcess.inputStream.bufferedReader().readText()
@@ -127,7 +134,9 @@ val output = childProcess.inputStream.bufferedReader().readText()
 println(output)
 ```
 
-## Cómo ejecutar una clase como un proceso
+## Cómo ejecutar una clase como un proceso (En GNU/Linux)
+
+> Nota importante: necesitas tener instalado Kotlin en tu sistema y puesto en el PATH.
 
 Hasta ahora hemos creado procesos que ejecutan comandos del sistema. Veamos, ahora, cómo crear un proceso para ejecutar un ejecutable de Kotlin/Java (un `class` o código compilado para la máquina virtual de java o *JVM*).
 
@@ -211,6 +220,65 @@ fun main() {
 ![Jerarquía de procesos ejemplo Kotlin](./img/jerarquia_procesos_ejemplo.png)
 
 Así pues, hay tres procesos cuya ejecución entra a ser planificada por el Sistema Operativo, así que no podemos conocer por adelantado qué proceso acabará antes que otro, dependerá de la planificación que haga dicho Sistema Operativo.
+
+## Cómo ejecutar una clase como un proceso (En Windows)
+
+> Vas a necesitar tener Java instalado y puesto en el PATH.
+
+Para que los ejemplos anteriores te funcionen en Windows tendrás que hacer unos pequeños cambios. Para ilustrar dichos cambios he copiado y pegado el último ejemplo del apartado anterior introduciendo dichos cambios marcados por comentarios:
+
+```kotlin
+class Addition {
+    fun add(n1: Int, n2: Int): Int {
+        var result = 0
+        for (i in n1..n2) {
+            result += i
+        }
+        return result
+    }
+
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            if (args.isEmpty() || args.size < 2) {
+                println("Two numbers are needed")
+                return
+            }
+
+            val addition = Addition()
+            val n1 = Integer.parseInt(args[0])
+            val n2 = Integer.parseInt(args[1])
+            addition.add(n1, n2);
+        }
+    }
+}
+
+fun launchAdder(n1: Int, n2: Int) {
+    val className = "com.proferoman.Addition"
+    val classPath = System.getProperty("java.class.path")
+
+    // Novedades: generamos la ruta absoluta a java
+    val javaHome = System.getProperty("java.home")
+    val javaBin = "$javaHome/bin/java"
+
+    // Novedades: cambiamos "kotlin" por javaBin (que contiene la ruta a java)
+    val processBuilder = ProcessBuilder(
+        javaBin, "-cp", classPath, className,
+        n1.toString(), n2.toString()
+    )
+
+    val addProcess = processBuilder
+        .inheritIO()
+        .start()
+}
+
+fun main() {
+    launchAdder(1, 100_000_000)
+    launchAdder(1, 2)
+}
+```
+
+El resto de ejemplos se ilustran para GNU/Linux pero **ya sabes qué hacer para migrarlos a Windows**.
 
 ## Mostrar información de los procesos: prueba de concurrencia
 
