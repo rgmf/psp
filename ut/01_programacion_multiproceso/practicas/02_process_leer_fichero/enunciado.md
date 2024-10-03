@@ -40,6 +40,10 @@ Palíndromos encontrados:
 - menem
 ```
 
+# Ficheros de ejemplo
+
+En la carpeta `ficheros` que verás junto a este documento tienes tres ficheros que puedes usar para probar tu programa. La corrección se hará con otros, así que deberías generar tus propios ficheros y hacer pruebas más exhaustivas.
+
 # Cómo especificar la carpeta en la línea de entrada
 
 El programa esperará una opción llamada `-d` seguida del valor. Dicho valor será la ruta absoluta de la carpeta. Por ejemplo: `-d /home/psp/documentos/ficheros`

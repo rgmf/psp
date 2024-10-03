@@ -366,7 +366,7 @@ Crea un proyecto en Kotlin llamado `IntroProcess` en el que el proceso padre ini
 
 - El primero de los procesos obtendrá los personajes de la serie Rick and Morty a través de la API [pública de Rick and Morty](https://rickandmortyapi.com) y cuyo endpoint para la obtención de los personajes es: *https://rickandmortyapi.com/api/character*
 
-- El segundo de los procesos obtendrá información de una IP pública que le pases a través de [esta API pública](https://ip-api.com) y cuyo *endpoint* es: *https://ip-api.com/<ip>* donde `<ip>` es la IP pública para que deseas la información. Puedes probar con la IP de la Conselleria `195.77.20.100`, por ejemplo.
+- El segundo de los procesos obtendrá información de una IP pública que le pases a través de [esta API pública](https://ip-api.com) y cuyo *endpoint* es: `https://ip-api.com/<ip>` donde `<ip>` es la IP pública para que deseas la información. Puedes probar con la IP de la Conselleria `195.77.20.100`, por ejemplo.
 
 Ambos procesos tienen que mostrar por pantalla:
 
@@ -407,7 +407,7 @@ try {
 }
 ```
 
-> La solución la puedes encontra en la carpeta `programas` de estos apuntes, pero no lo mires, sé fuerte y trata de hacerlo por ti mismo/a :P y una vez termines contrasta tu solución con esta.
+> La solución la puedes encontrar en la carpeta `programas` de estos apuntes, pero no lo mires, sé fuerte y trata de hacerlo por ti mismo/a :P y una vez termines contrasta tu solución con esta.
 
 ## Manejando procesos: métodos útiles de la clase Process
 
@@ -471,3 +471,13 @@ fun main() {
 ### Ejercicio propuesto
 
 Modifica el programa anterior para acabar con los procesos que siguen ejecutándose depués de 3 segundos.
+
+# Comunicación entre procesos
+
+La comunicación entre procesos no es fácil porque el Sistema Operativo aísla los mismos para que un proceso no pueda moficar la memoria de otro proceso.
+
+No obstante existen una serie de técnicas de comunicación entre procesos como son: señales, sockets, ficheros, tuberías (o *pipes*), entre otras.
+
+A lo largo del tema escribiremos ejemplos donde pondremos en prácticas estas técnicas de comunicación entre procesos.
+
+> Veremos más adelante que la comunicación entre hilos es más sencilla porque conviven dentro del mismo proceso.
