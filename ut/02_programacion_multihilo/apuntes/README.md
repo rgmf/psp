@@ -43,14 +43,14 @@
         </p>
       </td>
       <td>
-        CE2a. Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.
-        CE2b. Se han reconocido los mecanismos para crear, iniciar y finalizar hilos.
-        CE2c. Se han programado aplicaciones que implementen varios hilos.
-        CE2d. Se han identificado los posibles estados de ejecución de un hilo y programado aplicaciones que los gestionen.
-        CE2e. Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.
-        CE2f. Se han desarrollado programas formados por varios hilos sincronizados mediante técnicas específicas.
-        CE2g. Se ha establecido y controlado la prioridad de cada uno de los hilos de ejecución.
-        CE2h. Se han depurado y documentado los programas desarrollados.
+        CE2a. Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.<br>
+        CE2b. Se han reconocido los mecanismos para crear, iniciar y finalizar hilos.<br>
+        CE2c. Se han programado aplicaciones que implementen varios hilos.<br>
+        CE2d. Se han identificado los posibles estados de ejecución de un hilo y programado aplicaciones que los gestionen.<br>
+        CE2e. Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.<br>
+        CE2f. Se han desarrollado programas formados por varios hilos sincronizados mediante técnicas específicas.<br>
+        CE2g. Se ha establecido y controlado la prioridad de cada uno de los hilos de ejecución.<br>
+        CE2h. Se han depurado y documentado los programas desarrollados.<br>
       </td>
     </tr>
   </tbody>
