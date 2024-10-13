@@ -9,10 +9,22 @@
     - f) Se han utilizado mecanismos para sincronizar y obtener el valor devuelto por los subprocesos iniciados.
     - g) Se han desarrollado aplicaciones que gestionen y utilicen procesos para la ejecución de varias tareas en paralelo.
     - h) Se han depurado y documentado las aplicaciones desarrolladas.
-*** Objetivos generales: b, e, i, j, n, ñ
+*** Objetivos generales: b, e, i, j, l, n, ñ
 *** Competencias: n, t, w
 
 * 2.- Programación multihilo
+** RA2. Desarrolla aplicaciones compuestas por varios hilos de ejecución analizando y aplicando librerías específicas del lenguaje de programación.
+*** Criterios de evaluación: a, b, c, d, e, f, g, h
+    - a) Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.
+    - b) Se han reconocido los mecanismos para crear, iniciar y finalizar hilos.
+    - c) Se han programado aplicaciones que implementen varios hilos.
+    - d) Se han identificado los posibles estados de ejecución de un hilo y programado aplicaciones que los gestionen.
+    - e) Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.
+    - f) Se han desarrollado programas formados por varios hilos sincronizados mediante técnicas específicas.
+    - g) Se ha establecido y controlado la prioridad de cada uno de los hilos de ejecución.
+    - h) Se han depurado y documentado los programas desarrollados.
+*** Objetivos generales: b, e, i, j, l, n, ñ
+*** Competencias: e, i, j, n, t, w
 
 * 3.- Networking y sockets
 
