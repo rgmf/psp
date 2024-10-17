@@ -13,10 +13,10 @@ Aquí nos vamos a centrar en la clase `Thread`.
 
 # Ejemplo básico
 
-Te muestro directamente un ejemplo de hilo básico utilizando la clase `Thread` de Kotlin en que verás que:
+Te muestro directamente un ejemplo de hilo básico utilizando la clase `Thread` de Kotlin donde verás que:
 
 - La clase `Thread` recibe una función lambda con el código que ejecutará el hilo creado.
-- En este caso el hilo no realiza ninguna tarea útil, simplemente se simula que está haciendo una tarea que duran 1 segundo (1 000 milisegundos).
+- En este caso el hilo no realiza ninguna tarea útil, simplemente se simula que está haciendo una tarea que dura 1 segundo (1 000 milisegundos).
 - Los procesos son identificados por un nombre al que podemos acceder a través de la clase `Thread` (`Thread.currentThread().name`)
 - Para iniciar la ejecución del hilo se usa el método `start()`.
 - El hilo ejecutado con el método `start()` se ejecuta en segundo plano.
@@ -54,7 +54,7 @@ Ahora, el hilo principal espera a que termine el hilo hijo y, por tanto, verás 
 
 # Memoria compartida
 
-Para explicar y entender cómo se usa la memoria compartida entre hilos para la comunicación entre ellos, pasemos a un ejemplo donde un programa busca los números primos entre el 1 y el 200. En este programa se divide la tarea en dos hilos: uno busca los primeos entre el 1 y el 100 y el otro entre el 101 y el 200. Varis cosas caben notar y destacar aquí:
+Para explicar y entender cómo se usa la memoria compartida entre hilos para la comunicación entre ellos, pasemos a un ejemplo donde un programa busca los números primos entre el 1 y el 200. En este programa se divide la tarea en dos hilos: uno busca los números primos que hay entre el 1 y el 100 y el otro entre el 101 y el 200. Varias cosas hay que señalar aquí:
 
 - Por un lado verás que se usan variables creadas en el hilo principal en los hilos hijos porque, como ya sabes, la memoria es compartida por los hilos, así que todos los hilos pueden acceder a las variables creadas por el hilo padre.
 

@@ -24,4 +24,4 @@ En algunos casos, como el **procesamiento de datos de alto rendimiento o la prog
 
 Esto se debe a que los procesos son independientes y no comparten el mismo espacio de memoria. En programación distribuida, los procesos pueden ejecutarse en diferentes máquinas en una red, lo cual no es posible con hilos debido a que los hilos deben estar dentro del mismo proceso y, por lo tanto, en la misma máquina.
 
-Además de la programación distribuida, se utiliza **programación multiproceso para aprovechar mejor los núcleos de CPU en casos donde se necesita aislamiento y estabilidad**. Dado que los procesos están aislados entre sí, fallas en un proceso no afectan a otros. Esto es útil en aplicaciones de alta disponibilidad y sistemas que requieren robustez.
+Además de la programación distribuida, se utiliza **programación multiproceso para aprovechar mejor los núcleos de CPU en casos donde se necesita aislamiento y estabilidad**. Dado que los procesos están aislados entre sí, errores en un proceso no afecta a otros. Esto es útil en aplicaciones de alta disponibilidad y sistemas que requieren robustez.

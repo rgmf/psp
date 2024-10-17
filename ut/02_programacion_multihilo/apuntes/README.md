@@ -30,16 +30,19 @@
           2.2. Escenarios adecuados para multiproceso<br>
         </p>
         <p>
-          3. La clase Thread<br>
-          3.1. Ejemplo básico<br>
-          3.2. Memoria compartida<br>
+          3. Medir tiempos de ejecución en Kotlin<br>
         </p>
         <p>
-          4. La clase Runnable<br>
-          4.1. Creando tareas: heredando de Runnable<br>
+          4. La clase Thread<br>
+          4.1. Ejemplo básico<br>
+          4.2. Memoria compartida<br>
         </p>
         <p>
-          5. Ejercicio propuesto<br>
+          5. La clase Runnable<br>
+          5.1. Creando tareas: heredando de Runnable<br>
+        </p>
+        <p>
+          6. Ejercicio propuesto<br>
         </p>
       </td>
       <td>
@@ -60,6 +63,7 @@
 
 1. [Hilos](01_hilos.md)
 2. [Hilos vs procesos](02_hilos_vs_procesos.md)
-3. [La clase Thread](03_clase_thread.md)
-4. [La clase Runnable](04_clase_runnable.md)
-5. [Ejercicio propuesto](05_ejercicio.md)
+3. [Medir tiempos de ejecución en Kotlin](03_medir_tiempos.md)
+3. [La clase Thread](04_clase_thread.md)
+4. [La clase Runnable](05_clase_runnable.md)
+5. [Ejercicio propuesto](06_ejercicio.md)

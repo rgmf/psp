@@ -28,7 +28,7 @@ Por último, recordar que todo proceso tiene un hilo principal pero que se puede
 
 # ¿Por qué hilos y programación multihilo?
 
-La respuesta a esta pregunta hoy en día parece obvia porque tenemos ordenadores con CPU formadas por varios *cores* que pueden ejecutar varios hilos en paralelo, lo cual acelera mucho la ejecución de programas multihilo.
+La respuesta a esta pregunta hoy en día parece obvia porque tenemos ordenadores con CPU formadas por varios *cores* que pueden ejecutar varios hilos en paralelo, lo cual acelera mucho la ejecución de programas.
 
 Pero la programacion multihilo también es útil para CPU con un único *core* ya que tareas bloqueantes, como son las tareas relacionadas con las operaciones de E/S, pueden ser lanzadas por otros hilos, manteniendo el hilo principal en ejecución y no bloqueado.
 
