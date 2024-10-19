@@ -21,9 +21,76 @@ La pregunta aquí, pues, sería: ¿por qué usar entonces `Runnable`?, ¿por qu�
 
 # Creando tareas: heredando de Runnable
 
-La mayoría de los casos, las tareas a realizar, tendrán una cierta complejidad, necesitarán recibir argumentos desde el exterior, etc, lo que hace necesario heredar de la clase `Runnable`. En estos casos, hay que sobreescribir el método `run()` de la clase `Runnable` para definir la tarea a realizar.
+La mayoría de los casos, las tareas a realizar, tendrán una cierta complejidad, necesitarán recibir argumentos desde el exterior, etc. En estos casos podemos optar por dos opciones que te describo en los siguientes apartados.
 
-En este ejemplo puedes ver cómo hacerlo (usamos el mismo ejemplo de los números primos entre 1 y 200 separando la tarea en 2):
+## Solución 1: mediante una función que crea el Runnable
+
+Simplemente, crea una función que reciba los argumentos necesarios del `Runnable` y el propio `Runnable`:
+
+```kotlin
+/**
+ * Función que comprueba si un número es primo.
+ */
+fun isPrime(num: Int): Boolean {
+    if (num < 2) {
+        return false
+    }
+
+    for (i in 2..Math.sqrt(num.toDouble()).toInt()) {
+        if (num % i == 0) {
+            return false
+        }
+    }
+
+    return true
+}
+
+/**
+ * Función que crea el Runnable con los argumentos pasados.
+ */
+fun primeTask(start: Int, end: Int, primes: MutableList<Int>): Runnable {
+    return Runnable {
+        for (i in start..end) {
+            if (isPrime(i)) {
+                primes.add(i)
+            }
+        }
+    }
+}
+
+/**
+ * Función de entrada al programa.
+ */
+fun main() {
+    // Listas para almacenar los números primos de cada rango
+    val primes1 = mutableListOf<Int>()
+    val primes2 = mutableListOf<Int>()
+
+    // Crea las tareas
+    val task1 = primeTask(1, 100, primes1)
+    val task2 = primeTask(101, 200, primes2)
+
+    // Crer hilos con las tareas
+    thread1 = Thread(task1)
+    thread2 = Thread(task2)
+
+    // Iniciar los hilos
+    thread1.start()
+    thread2.start()
+
+    // Esperar a que ambos hilos terminen
+    thread1.join()
+    thread2.join()
+
+    // Combinar y mostrar los resultados
+    val primes = primes1 + primes2
+    println("Números primos entre 1 y 200: $primes")
+}
+```
+
+## Solución 2: creando una clase que herede de Runnable
+
+Otra opción sería crear un clase que herede de `Runnable`. En estos casos, hay que sobreescribir el método `run()` de la clase `Runnable` para definir la tarea a realizar:
 
 ```kotlin
 /**
