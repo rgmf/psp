@@ -74,4 +74,4 @@ Temperatura media de la semana: 26,1428570
 
 Modifica el programa anterior para aceptar cualquier número de ficheros de texto. En vez de recibir por la línea de entrada de comandos dos ficheros, recibirá un directorio del que leerá todos los ficheros que hay y hará lo mismo pero con N ficheros, los que encuentre dentro de dicha carpeta.
 
-El resultado de este ejercicio lo tiene [Aquí](./workout/temperatures/)
+El resultado de este ejercicio lo tiene [Aquí](./workout/temperatures/) y puedes descargarlo en formato comprimido para abrirlo en tu editor de código favorito [aquí](./workout/temperatures.zip).
