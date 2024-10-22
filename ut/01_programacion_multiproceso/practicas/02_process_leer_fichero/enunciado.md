@@ -4,7 +4,7 @@ En esta práctica tienes que desarrollar un programa multiproceso en Kotlin que 
 
 Estos son los pasos que realizará el programa:
 
-1. Recibirá, como argumento de entrada, una ruta absoluta a una carpeta.
+1. Recibirá, como argumento a través de la línea de comandos, una ruta absoluta a una carpeta.
 2. Buscará todos los ficheros que haya en dicha carpeta.
 3. Por cada fichero que encuentre creará un proceso hijo encargado de leer de ese fichero en busca de los palíndromos.
 4. Cada proceso hijo escribirá en un fichero los palíndromos que encuentre separados por comas. Este fichero se llamará `<PID del proceso>.txt` y se encontrará en una carpeta llamada `output` dentro de la carpeta indicada en el paso 1.
@@ -44,22 +44,22 @@ Palíndromos encontrados:
 
 En la carpeta `ficheros` que verás junto a este documento tienes tres ficheros que puedes usar para probar tu programa. La corrección se hará con otros, así que deberías generar tus propios ficheros y hacer pruebas más exhaustivas.
 
-# Cómo especificar la carpeta en la línea de entrada
+# Cómo especificar la carpeta en la línea de comandos
 
 El programa esperará una opción llamada `-d` seguida del valor. Dicho valor será la ruta absoluta de la carpeta. Por ejemplo: `-d /home/psp/documentos/ficheros`
 
-En IntelliJ puedes indicar la entrada al programa en *Program arguments* en la configuración del proyecto:
+En IntelliJ puedes indicar la entrada al programa por la línea de comandos en *Program arguments* en la configuración del proyecto:
 
 ![Ir a configuración](./img/configuracion.png)
 
 ![Configuración](./img/configuracion2.png)
 
-# Cómo obtener los argumentos de la línea de entrada
+# Cómo obtener los argumentos de la línea de comandos
 
 Como ya sabes la signatura de la función de entrada a un programa en Kotlin es `fun main(args: Array<String>)`. Esperamos que el array con la entrada llamado `args` contenga dos elementos:
 
 1. el `String` "-d", y
-2. un segundo `String` con la ruta a la carpeta dond están los ficheros
+2. un segundo `String` con la ruta a la carpeta donde están los ficheros
 
 Lo primero que tiene que hacer tu programa es asegurarse que llegan estos dos argumentos. En otro caso acaba con un mensaje de error e indicando al usuario cómo usar el programa.
 
