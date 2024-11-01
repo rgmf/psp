@@ -21,33 +21,41 @@ import kotlinproject.composeapp.generated.resources.compose_multiplatform
 import java.net.HttpURLConnection
 import java.net.URL
 
-private fun fetch(url: URL): String {
-    Thread.sleep(5000)
-    val connection = url.openConnection() as HttpURLConnection
+class FetchRunnable(val url: URL): Runnable {
+    private var _data: String = ""
+    val data: String
+        get() = _data
 
-    try {
-        connection.requestMethod = "GET"
-        connection.connect()
+    override fun run() {
+        println("Start running in thread ${Thread.currentThread().name}")
+        Thread.sleep(5000)
+        val connection = url.openConnection() as HttpURLConnection
 
-        val responseCode = connection.responseCode
-        if (responseCode == HttpURLConnection.HTTP_OK) {
-            val stream = connection.inputStream
-            return stream.bufferedReader().use { it.readText() }
-        } else {
-            return "HTTP error code: $responseCode"
+        try {
+            connection.requestMethod = "GET"
+            connection.connect()
+
+            val responseCode = connection.responseCode
+            if (responseCode == HttpURLConnection.HTTP_OK) {
+                val stream = connection.inputStream
+                _data = stream.bufferedReader().use { it.readText() }
+            } else {
+                _data = "HTTP error code: $responseCode"
+            }
+            println("Data from thread ${Thread.currentThread().name}: $_data")
+        } catch (e: Exception) {
+            e.printStackTrace()
+        } finally {
+            connection.disconnect()
         }
-    } catch (e: Exception) {
-        e.printStackTrace()
-    } finally {
-        connection.disconnect()
     }
-    return ""
 }
 
 @Composable
 @Preview
 fun App() {
     var data by remember { mutableStateOf("") }
+    val task = FetchRunnable(URL("https://rickandmortyapi.com/api/character"))
 
     MaterialTheme {
         Scaffold(
@@ -59,8 +67,8 @@ fun App() {
                     actions = {
                         IconButton(
                             onClick = {
-                                data = fetch(URL("https://rickandmortyapi.com/api/character"))
-                                println("Data: $data")
+                                val thread = Thread(task)
+                                thread.start()
                             }
                         ) {
                             Icon(
