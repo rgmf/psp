@@ -32,11 +32,14 @@ Hay un problema: solo *printeamos* por pantalla los resultados obtenidos en la A
 
 Se puede probar a hacer clic muchas veces en el botón que lanza el hilo para ver cómo se crear varios hilos si bloquear el hilo principal.
 
-## Paso 3: 03_RickAndMortyUpdateUi: actualizamos la UI con los datos que llegan de la API
+## Paso 3: presentación donde explico cómo funciona el patrón observer y cómo usar MutableStateFlow en Kotlin para modificar los Composable de forma reactiva
 TENGO UNA PRESENTACIÓN DONDE EXPLICAR TODA ESTA PARTE DE FORMA GRÁFICA QUE VA A SER MÁS FÁCIL DE ENTENDER:
 
 `presentacion/mutable_state_flow.odp`.
 
+Tras la presentación podemos pasar a completar el ejemplo anterior, que nos quedó pendiente.
+
+## Paso 4: 03_RickAndMortyUpdateUi: actualizamos la UI con los datos que llegan de la API
 Está hecho en `ejemplos/multiplatform/03_RickAndMortyUpdateUi`.
 
 Antes de entrar de lleno en esta parte, es necesario saber, y tengo que explicar, qué es un **StateFlow** de Kotlin. Básicamente se trata del **Patrón Observer** en el que los componentes se pueden subscribir a cambios de estado (de un objeto) y recibir notificaciones automáticamente cuando el valor cambia.
