@@ -1,9 +1,12 @@
 # Resultados de aprendizaje y criterios de evaluación
 
 - **RA2**. Desarrolla aplicaciones compuestas por varios procesos reconociendo y aplicando principios de programación paralela.
+  - **CE2a**. Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.
   - **CE2b**. Se han reconocido los mecanismos para crear, iniciar y finalizar hilos.
   - **CE2c**. Se han programado aplicaciones que implementen varios hilos.
   - **CE2d**. Se han identificado los posibles estados de ejecución de un hilo y programado aplicaciones que los gestionen.
+  - **CE2e**. Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.
+  - **CE2h**. Se han depurado y documentado los programas desarrollados.
 
 # Ejercicio propuesto
 

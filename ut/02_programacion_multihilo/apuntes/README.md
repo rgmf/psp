@@ -42,7 +42,16 @@
           5.1. Creando tareas: heredando de Runnable<br>
         </p>
         <p>
-          6. Ejercicio propuesto<br>
+          6. Ejercicio propuesto: hilos con lógica sencilla<br>
+        </p>
+        <p>
+          7. Ejercicio propuesto: hilos con lógica más complicada<br>
+        </p>
+        <p>
+          8. Sincronización de hilos<br>
+          8.1. Race conditions<br>
+          8.2. Mutex o exclusión mutua<br>
+          8.3. Deadlock o bloqueo mutuo
         </p>
       </td>
       <td>
@@ -64,6 +73,8 @@
 1. [Hilos](01_hilos.md)
 2. [Hilos vs procesos](02_hilos_vs_procesos.md)
 3. [Medir tiempos de ejecución en Kotlin](03_medir_tiempos.md)
-3. [La clase Thread](04_clase_thread.md)
-4. [La clase Runnable](05_clase_runnable.md)
-5. [Ejercicio propuesto](06_ejercicio.md)
+4. [La clase Thread](04_clase_thread.md)
+5. [La clase Runnable](05_clase_runnable.md)
+6. [Ejercicio propuesto: hilos con lógica sencilla](06_ejercicio.md)
+7. [Ejercicio propuesto: hilos con lógica más complicada](07_ejercicio.md)
+8. [Sincronización de hilos](08_sync_mutex_lock.md)
