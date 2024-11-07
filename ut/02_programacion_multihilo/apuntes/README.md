@@ -53,6 +53,9 @@
           8.2. Mutex o exclusión mutua<br>
           8.3. Deadlock o bloqueo mutuo
         </p>
+        <p>
+          9. Ejercicio propuesto: sincronización de hilos<br>
+        </p>
       </td>
       <td>
         CE2a. Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.<br>
@@ -78,3 +81,4 @@
 6. [Ejercicio propuesto: hilos con lógica sencilla](06_ejercicio.md)
 7. [Ejercicio propuesto: hilos con lógica más complicada](07_ejercicio.md)
 8. [Sincronización de hilos](08_sync_mutex_lock.md)
+9. [Ejercicio propuesto: sincronización de hilos](09_ejercicio.md)

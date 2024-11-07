@@ -8,7 +8,7 @@
   - **CE2e**. Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.
   - **CE2h**. Se han depurado y documentado los programas desarrollados.
 
-# Ejercicio propuesto
+# Ejercicio propuesto: hilos con lógica más complicada
 
 Escribe un programa en Kotlin que calcule el promedio de temperaturas de una ciudad en los últimos 7 días. El programa deberá obtener las temperaturas de dos fuentes diferentes de datos: dos ficheros de texto que recibirá por la línea de entrada de comandos.
 

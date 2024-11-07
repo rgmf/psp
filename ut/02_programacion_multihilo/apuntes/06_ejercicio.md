@@ -8,7 +8,7 @@
   - **CE2e**. Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.
   - **CE2h**. Se han depurado y documentado los programas desarrollados.
 
-# Ejercicio propuesto
+# Ejercicio propuesto: hilos con lógica sencilla
 
 Escribe un programa en Kotlin que reciba **por la línea de comandos** un número entero.
 
