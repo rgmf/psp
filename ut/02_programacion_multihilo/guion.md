@@ -20,6 +20,11 @@ Hacemos los ejercicios y *Ninja Trainings* que se tienen en los apartados 6 y 7.
 # Práctica guiada: race conditions / mutex / deadlocks
 Entramos en los conceptos de "race conditions" y "deadlocks". Hacemos práctica guiada que tengo en `ejemplos/mutex` en el que podemos ver dos ejemplos donde se producen problemas al acceder a la misma memoria compartida y cómo solucionarlo con mutex (ReentrantLock).
 
+# Ninja trainings: mutex
+Hacemos el ejercicio y *Ninja Training* que se tiene en el apartado 9.
+
+- [Tercer Ninja Training](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/09_ejercicio.md)
+
 # Práctica guiada: programación de hilos en aplicaciones con UI
 Escribimos, a través de una práctica guiada y dirigida por mí, un programa que obtiene información de la API de Rick and Morty información. Dicho programa lo escribismo con Kotlin Multiplatform (KMP).
 
@@ -72,7 +77,7 @@ Y, luego, en un composable:
 ```kotlin
 @Composable
 fun SomeComposable() {
-    val someObject = SomeClass()
+    val someObject = remember { SomeClass() }
     val state = someObject.data.collectAsState()
 
     // Continua...

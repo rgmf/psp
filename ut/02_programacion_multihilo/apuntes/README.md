@@ -54,7 +54,13 @@
           8.3. Deadlock o bloqueo mutuo
         </p>
         <p>
-          9. Ejercicio propuesto: sincronización de hilos<br>
+          9. Ejercicio propuesto: sincronización de hilos
+        </p>
+        <p>
+          10. Introducción a las corrutinas en Kotlin<br>
+          10.1. Introducción a las corrutinas<br>
+          10.2. kotlinx.coroutines<br>
+          10.3. Relación entre corrutinas e hlos
         </p>
       </td>
       <td>
@@ -82,3 +88,4 @@
 7. [Ejercicio propuesto: hilos con lógica más complicada](07_ejercicio.md)
 8. [Sincronización de hilos](08_sync_mutex_lock.md)
 9. [Ejercicio propuesto: sincronización de hilos](09_ejercicio.md)
+10. [Introducción a las corrutinas en Kotlin](10_coroutines_intro.md)

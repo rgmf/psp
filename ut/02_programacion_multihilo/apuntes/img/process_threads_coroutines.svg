@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="145mm"
+   height="86mm"
+   viewBox="0 0 145 86"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="process_threads_coroutines.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.7658675"
+     inkscape:cx="244.63897"
+     inkscape:cy="267.29073"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#e8e8e9;fill-opacity:0.315378;stroke:#000000;stroke-width:0.413706;stroke-linecap:square;stroke-opacity:1"
+       id="rect13"
+       width="135.31387"
+       height="76.862717"
+       x="4.8656893"
+       y="4.45434" />
+    <g
+       id="g14"
+       transform="matrix(0.78180463,0,0,0.78180463,-4.9296695,-60.711665)">
+      <text
+         xml:space="preserve"
+         style="font-size:10.9652px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.37065;stroke-linecap:square"
+         x="122.57071"
+         y="170.28772"
+         id="text4"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.37065"
+           x="122.57071"
+           y="170.28772">Proceso</tspan></text>
+      <g
+         id="g13">
+        <text
+           xml:space="preserve"
+           style="font-size:9.55128px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.19391;stroke-linecap:square"
+           x="65.779533"
+           y="104.59887"
+           id="text1"><tspan
+             sodipodi:role="line"
+             id="tspan1"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.19391"
+             x="65.779533"
+             y="104.59887">Thread X</tspan></text>
+        <rect
+           style="fill:#59a74b;fill-opacity:1;stroke:none;stroke-width:0.463793;stroke-linecap:square"
+           id="rect4"
+           width="50.33474"
+           height="12.888664"
+           x="78.381958"
+           y="94.542191" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.25122px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403;stroke-linecap:square"
+           x="121.20691"
+           y="103.03719"
+           id="text5"><tspan
+             sodipodi:role="line"
+             id="tspan5"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403"
+             x="121.20691"
+             y="103.03719">Coroutine A</tspan></text>
+        <rect
+           style="fill:#59a7cb;fill-opacity:1;stroke:none;stroke-width:0.463793;stroke-linecap:square"
+           id="rect5"
+           width="50.33474"
+           height="12.888664"
+           x="128.65282"
+           y="94.542191" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.25122px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403;stroke-linecap:square"
+           x="171.47781"
+           y="103.03719"
+           id="text6"><tspan
+             sodipodi:role="line"
+             id="tspan6"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403"
+             x="171.47781"
+             y="103.03719">Coroutine B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:9.55128px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.19391;stroke-linecap:square"
+           x="65.779533"
+           y="125.76553"
+           id="text7"><tspan
+             sodipodi:role="line"
+             id="tspan7"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.19391"
+             x="65.779533"
+             y="125.76553">Thread Y</tspan></text>
+        <rect
+           style="fill:#d67b2d;fill-opacity:1;stroke:none;stroke-width:0.463793;stroke-linecap:square"
+           id="rect7"
+           width="50.33474"
+           height="12.888664"
+           x="78.381958"
+           y="115.70885" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.25122px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403;stroke-linecap:square"
+           x="121.20691"
+           y="124.20386"
+           id="text8"><tspan
+             sodipodi:role="line"
+             id="tspan8"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403"
+             x="121.20691"
+             y="124.20386">Coroutine C</tspan></text>
+        <rect
+           style="fill:#59a74b;fill-opacity:1;stroke:none;stroke-width:0.463793;stroke-linecap:square"
+           id="rect8"
+           width="50.33474"
+           height="12.888664"
+           x="128.65282"
+           y="115.70885" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.25122px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403;stroke-linecap:square"
+           x="171.47781"
+           y="124.20386"
+           id="text9"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403"
+             x="171.47781"
+             y="124.20386"
+             id="tspan10">Coroutine A</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:9.55128px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.19391;stroke-linecap:square"
+           x="65.779533"
+           y="146.93222"
+           id="text11"><tspan
+             sodipodi:role="line"
+             id="tspan11"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.19391"
+             x="65.779533"
+             y="146.93222">Thread Y</tspan></text>
+        <rect
+           style="fill:#59a7cb;fill-opacity:1;stroke:none;stroke-width:0.463793;stroke-linecap:square"
+           id="rect11"
+           width="50.33474"
+           height="12.888664"
+           x="78.381966"
+           y="136.87552" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.25122px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403;stroke-linecap:square"
+           x="121.20691"
+           y="145.37054"
+           id="text12"><tspan
+             sodipodi:role="line"
+             id="tspan12"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403"
+             x="121.20691"
+             y="145.37054">Coroutine B</tspan></text>
+        <rect
+           style="fill:#d67b2d;fill-opacity:1;stroke:none;stroke-width:0.463793;stroke-linecap:square"
+           id="rect12"
+           width="50.33474"
+           height="12.888664"
+           x="128.65282"
+           y="136.87552" />
+        <text
+           xml:space="preserve"
+           style="font-size:5.25122px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:end;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403;stroke-linecap:square"
+           x="171.47781"
+           y="145.37054"
+           id="text13"><tspan
+             sodipodi:role="line"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.656403"
+             x="171.47781"
+             y="145.37054"
+             id="tspan13">Coroutine C</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
