@@ -78,7 +78,12 @@
         <p>
           13. Corrutinas en acción: suspending, sync y async<br>
           13.1. Secuencial por defecto<br>
-          13.2. Concurrencia con async<br>
+          13.2. Concurrencia con async
+        </p>
+        <p>
+          14. Corrutinas en acción: context y dispatcher<br>
+          14.1. Dispatchers e hilos<br>
+          14.2. CoroutineScope: un caso de uso en Android
         </p>
       </td>
       <td>
@@ -110,3 +115,4 @@
 11. [Corrutinas en acción: iniciación](11_coroutines_in_action.md)
 12. [Corrutinas en acción: cancelaciones y timeout](12_coroutines_cancelation_timeout.md)
 13. [Corrutinas en acción: concurrencia con funciones suspend](13_coroutines_concurrencia.md)
+14. [Corrutinas en acción: context y dispatcher](14_coroutines_context_dispatcher.md)
