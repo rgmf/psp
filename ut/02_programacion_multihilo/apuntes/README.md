@@ -57,10 +57,28 @@
           9. Ejercicio propuesto: sincronización de hilos
         </p>
         <p>
-          10. Introducción a las corrutinas en Kotlin<br>
+          10. Corrutinas<br>
           10.1. Introducción a las corrutinas<br>
           10.2. kotlinx.coroutines<br>
           10.3. Relación entre corrutinas e hlos
+        </p>
+        <p>
+          11. Corrutinas en acción: iniciación<br>
+          11.1 Tu primera corrutina<br>
+          11.2. Tu primera función suspendible<br>
+          11.3. Construcción de contexto o scope builder: coroutineScope y runBlocking
+          11.4. Esperando a las corrutinas: la clase Job
+          11.5. Async: un launch que devuelve valores
+        </p>
+        <p>
+          12. Corrutinas en acción: cancelaciones y timeout<br>
+          12.1. Cancelación de corrutinas lanzadas con launch<br>
+          12.2. Cancelación de corrutinas lanzadas con async
+        </p>
+        <p>
+          13. Corrutinas en acción: suspending, sync y async<br>
+          13.1. Secuencial por defecto<br>
+          13.2. Concurrencia con async<br>
         </p>
       </td>
       <td>
@@ -88,4 +106,7 @@
 7. [Ejercicio propuesto: hilos con lógica más complicada](07_ejercicio.md)
 8. [Sincronización de hilos](08_sync_mutex_lock.md)
 9. [Ejercicio propuesto: sincronización de hilos](09_ejercicio.md)
-10. [Introducción a las corrutinas en Kotlin](10_coroutines_intro.md)
+10. [Corrutinas](10_coroutines_intro.md)
+11. [Corrutinas en acción: iniciación](11_coroutines_in_action.md)
+12. [Corrutinas en acción: cancelaciones y timeout](12_coroutines_cancelation_timeout.md)
+13. [Corrutinas en acción: concurrencia con funciones suspend](13_coroutines_concurrencia.md)
