@@ -76,18 +76,21 @@
           12.2. Cancelación de corrutinas lanzadas con async
         </p>
         <p>
-          13. Corrutinas en acción: suspending, sync y async<br>
+          13. Corrutinas en acción: concurrencia con funciones suspend<br>
           13.1. Secuencial por defecto<br>
           13.2. Concurrencia con async
         </p>
         <p>
-          14. Corrutinas en acción: context y dispatcher<br>
-          14.1. Dispatchers e hilos<br>
-          14.2. CoroutineScope: un caso de uso en Android
+          14. Ejercicio propuesto: descarga de ficheros simulada
         </p>
         <p>
-          15. Corrutinas en acción: Flow<br>
-          15.1. Ejemplo práctico: simulación de un sensor de temperatura
+          15. Corrutinas en acción: context y dispatcher<br>
+          15.1. Dispatchers e hilos<br>
+          15.2. CoroutineScope: un caso de uso en Android
+        </p>
+        <p>
+          16. Corrutinas en acción: Flow<br>
+          16.1. Ejemplo práctico: simulación de un sensor de temperatura
         </p>
       </td>
       <td>
@@ -119,5 +122,6 @@
 11. [Corrutinas en acción: iniciación](11_coroutines_in_action.md)
 12. [Corrutinas en acción: cancelaciones y timeout](12_coroutines_cancelation_timeout.md)
 13. [Corrutinas en acción: concurrencia con funciones suspend](13_coroutines_concurrencia.md)
-14. [Corrutinas en acción: context y dispatcher](14_coroutines_context_dispatcher.md)
-15. [Corrutinas en acción: Flow](15_coroutines_flow.md)
+14. [Ejercicio propuesto: descarga de ficheros simulada](14_ejercicio.md)
+15. [Corrutinas en acción: context y dispatcher](15_coroutines_context_dispatcher.md)
+16. [Corrutinas en acción: Flow](16_coroutines_flow.md)
