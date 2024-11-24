@@ -85,6 +85,10 @@
           14.1. Dispatchers e hilos<br>
           14.2. CoroutineScope: un caso de uso en Android
         </p>
+        <p>
+          15. Corrutinas en acción: Flow<br>
+          15.1. Ejemplo práctico: simulación de un sensor de temperatura
+        </p>
       </td>
       <td>
         CE2a. Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.<br>
@@ -116,3 +120,4 @@
 12. [Corrutinas en acción: cancelaciones y timeout](12_coroutines_cancelation_timeout.md)
 13. [Corrutinas en acción: concurrencia con funciones suspend](13_coroutines_concurrencia.md)
 14. [Corrutinas en acción: context y dispatcher](14_coroutines_context_dispatcher.md)
+15. [Corrutinas en acción: Flow](15_coroutines_flow.md)
