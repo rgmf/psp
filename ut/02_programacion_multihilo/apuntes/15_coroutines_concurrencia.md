@@ -95,3 +95,62 @@ class MyActivity {
     }
 }
 ```
+
+## LaunchedEffect: un caso de uso en Jetpack Compose
+
+En Jetpack Compose, las recomposiciones pueden ocurrir frecuentemente y de manera impredecible. Si queremos ejecutar una tarea que no debe reiniciarse con cada recomposición (como iniciar un flujo de datos, realizar una solicitud de red, o escuchar eventos), podemos usar `LaunchedEffect`. Este es un **componente clave para integrar corrutinas en composables** de manera segura y eficiente.
+
+`LaunchedEffect` recibe dos argumentos:
+
+- El primero es una clave (valor de una variable/objeto) que determinará cuándo se lanza la corrutina que se especifica en el segundo argumento
+
+- El segundo argumento es la corrutina a ejecutar cuando la clave cambia de valor o hay una nueva recomposición
+
+Es necesario lanzar corrutinas dentro de `LaunchedEffect` en los *composables* que escribas porque si dicho composable se elimina, las corrutinas se cancelarán y no continuarán ejecutándose.
+
+Aquí te muestro un ejemplo básico de un `Composable` en el que se cargan datos en una corrutina y dicha carga se hace dentro de una corrutina. En este caso hemos pasado como clave `Unit` porque solo queremos lanzar la corrutina una sola vez, cuando se produce la recomposición:
+
+```kotlin
+@Composable
+fun DataScreen(viewModel: DataViewModel) {
+    val data by viewModel.data.collectAsState()
+
+    // Se ejecuta una sola vez, cuando se recompone el composable
+    LaunchedEffect(Unit) {
+        viewModel.loadData()
+    }
+
+    Column {
+        if (data.isEmpty()) {
+            Text("Cargando datos...")
+        } else {
+            data.forEach { item ->
+                Text(item)
+            }
+        }
+    }
+}
+```
+
+En este otro ejemplo te muestro cómo ejecutar la corrutina cada vez que hay un cambio de valor en una variable u objeto, que en este caso es el valor de la variable `userId`. Así pues, se ejecutará la corrutina cada vez que haya recomposición o que cambie el valor de `userId`:
+
+```kotlin
+@Composable
+fun UserDetailsScreen(userId: String, viewModel: UserViewModel) {
+    val user by viewModel.user.collectAsState()
+
+    // Se lanza en cada recomposición o cambio de valor en userId
+    LaunchedEffect(userId) {
+        viewModel.loadUser(userId)
+    }
+
+    Column {
+        if (user == null) {
+            Text("Cargando usuario...")
+        } else {
+            Text("Nombre: ${user.name}")
+            Text("Email: ${user.email}")
+        }
+    }
+}
+```

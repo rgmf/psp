@@ -92,6 +92,9 @@
           16. Corrutinas en acción: Flow<br>
           16.1. Ejemplo práctico: simulación de un sensor de temperatura
         </p>
+        <p>
+          17. Ejercicio propuesto: contador de puntuaciones de un juego
+        </p>
       </td>
       <td>
         CE2a. Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.<br>
@@ -125,3 +128,4 @@
 14. [Ejercicio propuesto: descarga de ficheros simulada](14_ejercicio.md)
 15. [Corrutinas en acción: context y dispatcher](15_coroutines_context_dispatcher.md)
 16. [Corrutinas en acción: Flow](16_coroutines_flow.md)
+17. [Ejercicio propuesto: contador de puntuaciones de un juego](17_ejercicio.md)
