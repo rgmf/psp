@@ -84,4 +84,12 @@ fun SomeComposable() {
 }
 ```
 
-# Ninja trainings: Runnable, Thread y StateFlow en Kotlin Multiplatform (y Jetpack Compose)
+# Práctica: EdgeDetection con Sobel
+
+# Corrutinas
+
+Empiezo por la presentación sobre corrutinas donde explico lo básico
+
+# Ejercicio propuesto: distancia euclidiana
+
+- [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/12_ejercicio.md)

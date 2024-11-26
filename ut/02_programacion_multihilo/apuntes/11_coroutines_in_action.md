@@ -80,7 +80,7 @@ El uso típico de `runBlocking` se da en los tests y la función principal del p
 | Puntos a tratar           | `runBlocking`                                     | `coroutineScope`                                  |
 | ------------------------- | ------------------------------------------------- | ------------------------------------------------- |
 | ¿Bloquea el hilo?         | Sí                                                | No                                                |
-| Uso típico                | Entra al programa o pruebas                       | Dentro de funcions `suspend`                      |
+| Uso típico                | Entrada al programa o pruebas                       | Dentro de funciones `suspend`                      |
 | Contexto necesario        | Puede ser llamado desde cualquier lugar           | Solo se puede usar en funciones `suspend`         |
 | Concurrencia estructurada | Garantiza completar todas las corrutinas internas | Garantiza completar todas las corrutinas internas |
 
