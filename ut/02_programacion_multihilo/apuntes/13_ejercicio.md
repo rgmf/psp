@@ -78,3 +78,7 @@ Terminó en 11675 ms
 2345678901234567890 = 2 x 5 x 41 x 433 x 13212859242013
 3456789012345678901 = 299170853 x 11554564817
 ```
+
+# Solución
+
+El resultado de este ejercicio lo tiene [Aquí](./workout/rsa_factors/).
