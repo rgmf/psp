@@ -28,9 +28,9 @@ En general, la distancia entre los puntos `P = (p1, p2, ..., pn)` y `Q = (q1, q2
 
 ## Enunciado del programa a desarrollar
 
-Escribe un programa que aproveche las corrutinas para calcular las distancias de 50 millones de puntos en un espacio tridimensional con respecto a un puto de referencia en `(0, 0, 0)` de dicho espacio tridimensional.
+Escribe un programa que aproveche las corrutinas para calcular las distancias de 50 millones de puntos en un espacio tridimensional con respecto a un puto de referencia en `(0.0, 0.0, 0.0)` de dicho espacio tridimensional.
 
-Puedes dividir la tarea entre 5 corrutinas, por ejemplo, cada una de ellas que se encargue de 10 millones de puntos.
+Puedes dividir la tarea entre 5 corrutinas, por ejemplo, para que cada una de ellas que se encargue de 10 millones de puntos.
 
 El programa tendrá los 50 millones de distancias guardadas en una lista.
 

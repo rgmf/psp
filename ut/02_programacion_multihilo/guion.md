@@ -93,3 +93,7 @@ Empiezo por la presentación sobre corrutinas donde explico lo básico
 # Ejercicio propuesto: distancia euclidiana
 
 - [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/12_ejercicio.md)
+
+# Ejercicio propuesto: factores primos de números grandes
+
+- [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/13_ejercicio.md)
