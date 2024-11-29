@@ -35,3 +35,7 @@ Puedes dividir la tarea entre 5 corrutinas, por ejemplo, para que cada una de el
 El programa tendrá los 50 millones de distancias guardadas en una lista.
 
 Vamos a usar número de tipo `Double`.
+
+# Solución
+
+El resultado de este ejercicio lo tiene [Aquí](./workout/distancia_euclidea/).
