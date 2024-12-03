@@ -24,7 +24,7 @@ Puedes encontrar información sobre el algoritmo *Trial Division* [en la wikiped
 
 ```c
 Función TrialDivision(n)
-    Crear un conjunto vacío de factores: factores = {}
+    Crear una lista vacía de factores: factores = {}
 
     Si n es divisible por 2
         Mientras n sea divisible por 2
@@ -45,10 +45,10 @@ Fin
 
 Haz una **versión secuencial**, y sin uso de corrutinas, y **otra version con corrutinas**, y compara los tiempos. En la versión con corrutinas lo tienes "fácil": solo tienes que usar una corrutina para cada número del que haya que calcular sus factores primos.
 
-Por ejemplo, con el siguiente conjunto de números:
+Por ejemplo, con la siguiente lista de números:
 
 ```kotlin
-var numbers = setOf(
+var numbers = listOf(
     987_654_321_987_654_321L,
     1_234_567_890_123_456_789L,
     2_345_678_901_234_567_890L,
