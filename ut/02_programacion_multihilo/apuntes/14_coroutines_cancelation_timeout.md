@@ -86,9 +86,11 @@ fun main() = runBlocking {
 
 ## Corrutinas cancelables
 
-Para que una corrutina pueda ser interrumpida o cancelable, se tiene que usar funciones suspendibles o *suspend*.
+Para que una corrutina pueda ser interrumpida o cancelable, se tienen que usar funciones suspendibles o *suspend*, como `delay` o `yield`.
 
-Imagina que tenemos una corrutina en la que se ejecuta un bucle que tarda mucho tiempo y queremos suspenderla si supera un tiempo determinado. Sin en dicho bucle no usas una función *suspend*, esta corrutina no se suspenderá aunque llames al método `suspend` del `Job` o del `Deferred`, según el caso.
+> No hemos visto ejemplos de uso de yield pero es ampliamente usada en contextos de generación de secuencias.
+
+Imagina que tenemos una corrutina en la que se ejecuta un bucle que tarda mucho tiempo y queremos suspenderla si supera un tiempo determinado. Si en dicho bucle no usas una función *suspend*, esta corrutina no se suspenderá aunque llames al método `suspend` del `Job` o del `Deferred`, según el caso.
 
 Una solución a estos casos es comprobar si `isActive` devuelve `true` o `false` al principio del bucle. Así sabrás si ha sido suspendida o no:
 
