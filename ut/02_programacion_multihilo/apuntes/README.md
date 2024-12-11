@@ -128,7 +128,7 @@
 11. [Corrutinas en acción: iniciación](11_coroutines_in_action.md)
 12. [Ejercicio propuesto: distancia euclidiana](12_ejercicio.md)
 13. [Ejercicio propuesto: problema central en la criptografía RSA](13_ejercicio.md)
-14. [Corrutinas en acción: cancelaciones y timeout](13_coroutines_cancelation_timeout.md)
+14. [Corrutinas en acción: cancelaciones y timeout](14_coroutines_cancelation_timeout.md)
 15. [Corrutinas en acción: concurrencia con funciones suspend](14_coroutines_concurrencia.md)
 16. [Ejercicio propuesto: descarga de ficheros simulada](15_ejercicio.md)
 17. [Corrutinas en acción: context y dispatcher](16_coroutines_context_dispatcher.md)
