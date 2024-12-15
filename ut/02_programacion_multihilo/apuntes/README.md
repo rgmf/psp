@@ -71,32 +71,35 @@
           11.5. Async: un launch que devuelve valores
         </p>
         <p>
-          12. Ejercicio propuesto: distancia euclidiana
+          12. Corrutinas en acción: cancelaciones y timeout<br>
+          12.1. Cancelación de corrutinas lanzadas con launch<br>
+          12.2. Cancelación de corrutinas lanzadas con async
         </p>
         <p>
-          13. Corrutinas en acción: cancelaciones y timeout<br>
-          13.1. Cancelación de corrutinas lanzadas con launch<br>
-          13.2. Cancelación de corrutinas lanzadas con async
+          13. Corrutinas en acción: concurrencia con funciones suspend<br>
+          13.1. Secuencial por defecto<br>
+          13.2. Concurrencia con async
         </p>
         <p>
-          14. Corrutinas en acción: concurrencia con funciones suspend<br>
-          14.1. Secuencial por defecto<br>
-          14.2. Concurrencia con async
+          14. Corrutinas en acción: context y dispatcher<br>
+          14.1. Dispatchers e hilos<br>
+          14.2. CoroutineScope: un caso de uso en Android
         </p>
         <p>
-          15. Ejercicio propuesto: descarga de ficheros simulada
+          15. Ejercicio propuesto: distancia euclidiana
         </p>
         <p>
-          16. Corrutinas en acción: context y dispatcher<br>
-          16.1. Dispatchers e hilos<br>
-          16.2. CoroutineScope: un caso de uso en Android
+          16. Ejercicio propuesto: descarga de ficheros simulada
         </p>
         <p>
-          17. Corrutinas en acción: Flow<br>
-          17.1. Ejemplo práctico: simulación de un sensor de temperatura
+          17. Ejercicio propuesto: problema central en la criptografía RSA
         </p>
         <p>
-          18. Ejercicio propuesto: contador de puntuaciones de un juego
+          18. Corrutinas en acción: Flow<br>
+          18.1. Ejemplo práctico: simulación de un sensor de temperatura
+        </p>
+        <p>
+          19. Ejercicio propuesto: contador de puntuaciones de un juego
         </p>
       </td>
       <td>
@@ -126,11 +129,11 @@
 9. [Ejercicio propuesto: sincronización de hilos](09_ejercicio.md)
 10. [Corrutinas](10_coroutines_intro.md)
 11. [Corrutinas en acción: iniciación](11_coroutines_in_action.md)
-12. [Ejercicio propuesto: distancia euclidiana](12_ejercicio.md)
-13. [Ejercicio propuesto: problema central en la criptografía RSA](13_ejercicio.md)
-14. [Corrutinas en acción: cancelaciones y timeout](14_coroutines_cancelation_timeout.md)
-15. [Corrutinas en acción: concurrencia con funciones suspend](14_coroutines_concurrencia.md)
-16. [Ejercicio propuesto: descarga de ficheros simulada](15_ejercicio.md)
-17. [Corrutinas en acción: context y dispatcher](16_coroutines_context_dispatcher.md)
-18. [Corrutinas en acción: Flow](17_coroutines_flow.md)
+12. [Corrutinas en acción: cancelaciones y timeout](12_coroutines_cancelation_timeout.md)
+13. [Corrutinas en acción: concurrencia con funciones suspend](13_coroutines_concurrencia.md)
+14. [Corrutinas en acción: context y dispatcher](14_coroutines_context_dispatcher.md)
+15. [Ejercicio propuesto: distancia euclidiana](15_ejercicio.md)
+16. [Ejercicio propuesto: descarga de ficheros simulada](16_ejercicio.md)
+17. [Ejercicio propuesto: problema central en la criptografía RSA](17_ejercicio.md)
+18. [Corrutinas en acción: Flow](18_coroutines_flow.md)
 19. [Ejercicio propuesto: contador de puntuaciones de un juego](18_ejercicio.md)

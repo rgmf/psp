@@ -90,10 +90,30 @@ fun SomeComposable() {
 
 Empiezo por la presentación sobre corrutinas donde explico lo básico
 
+# Cancelación de corrutinas y dispatchers
+
+Explico, a través de los apuntes, cómo cancelar corrutinas y cómo y en qué consisten los dispatchers.
+
+# Concurrencia con funciones suspend
+
+Sigo con la teoría, este vez con fucniones suspend y otras cosas.
+
+# Context y dispatcher
+
+Termino esta parte de la teoría con context y dispatchers.
+
 # Ejercicio propuesto: distancia euclidiana
 
-- [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/12_ejercicio.md)
+- [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/15_ejercicio.md)
+
+# Ejercicio propuesto: descarga de ficheros simulada
+
+- [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/16_ejercicio.md)
 
 # Ejercicio propuesto: factores primos de números grandes
 
-- [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/13_ejercicio.md)
+- [Ejercicio corrutinas](https://github.com/rgmf/psp/blob/main/ut/02_programacion_multihilo/apuntes/17_ejercicio.md)
+
+# Práctica: AES
+
+# Práctica/Ejercicio consolidación: BestTravel con localizaciones WSG84
