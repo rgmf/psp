@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="54.250999mm"
+   height="24.228273mm"
+   viewBox="0 0 54.250999 24.228272"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="paso1_mensaje.svg"
+   inkscape:export-filename="paso1_mensaje.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0565516"
+     inkscape:cx="211.06399"
+     inkscape:cy="335.99873"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.2886379,-2.2676028)">
+    <rect
+       style="fill:#efeff0;fill-opacity:1;stroke:none;stroke-width:0.152141;stroke-linecap:square"
+       id="rect14"
+       width="44.251499"
+       height="15.555018"
+       x="5.4053044"
+       y="8.5917864" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:5.89197px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.220949;stroke-linecap:square"
+       x="18.505762"
+       y="18.411842"
+       id="text17"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';fill:#000000;fill-opacity:1;stroke-width:0.220949"
+         x="18.505762"
+         y="18.411842">Datos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.35994px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.235732;stroke-linecap:square"
+       x="18.257792"
+       y="7.7939663"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-size:4.35994px;fill:#000000;fill-opacity:1;stroke-width:0.235732"
+         x="18.257792"
+         y="7.7939663">Mensaje</tspan></text>
+  </g>
+</svg>
