@@ -15,18 +15,30 @@
 * 2.- Programación multihilo
 ** RA2. Desarrolla aplicaciones compuestas por varios hilos de ejecución analizando y aplicando librerías específicas del lenguaje de programación.
 *** Criterios de evaluación: a, b, c, d, e, f, g, h
-    - a) Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.
-    - b) Se han reconocido los mecanismos para crear, iniciar y finalizar hilos.
-    - c) Se han programado aplicaciones que implementen varios hilos.
-    - d) Se han identificado los posibles estados de ejecución de un hilo y programado aplicaciones que los gestionen.
-    - e) Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.
-    - f) Se han desarrollado programas formados por varios hilos sincronizados mediante técnicas específicas.
-    - g) Se ha establecido y controlado la prioridad de cada uno de los hilos de ejecución.
-    - h) Se han depurado y documentado los programas desarrollados.
+- a) Se han identificado situaciones en las que resulte útil la utilización de varios hilos en un programa.
+- b) Se han reconocido los mecanismos para crear, iniciar y finalizar hilos.
+- c) Se han programado aplicaciones que implementen varios hilos.
+- d) Se han identificado los posibles estados de ejecución de un hilo y programado aplicaciones que los gestionen.
+- e) Se han utilizado mecanismos para compartir información entre varios hilos de un mismo proceso.
+- f) Se han desarrollado programas formados por varios hilos sincronizados mediante técnicas específicas.
+- g) Se ha establecido y controlado la prioridad de cada uno de los hilos de ejecución.
+- h) Se han depurado y documentado los programas desarrollados.
 *** Objetivos generales: b, e, i, j, l, n, ñ
 *** Competencias: e, i, j, n, t, w
 
 * 3.- Networking y sockets
+** RA3. Programa mecanismos de comunicación en red empleando sockets y analizando el escenario de ejecución.
+*** Criterios de evaluación
+- a) Se han identificado escenarios que precisan establecer comunicación en red entre varias aplicaciones.
+- b) Se han identificado los roles de cliente y de servidor y sus funciones asociadas.
+- c) Se han reconocido librerías y mecanismos del lenguaje de programación que permiten programar aplicaciones en red.
+- d) Se ha analizado el concepto de socket, sus tipos y características.
+- e) Se han utilizado sockets para programar una aplicación cliente que se comunique con un servidor.
+- f) Se ha desarrollado una aplicación servidor en red y verificado su funcionamiento.
+- g) Se han desarrollado aplicaciones que utilizan sockets para intercambiar información.
+- h) Se han utilizado hilos para implementar los procedimientos de las aplicaciones relativos a la comunicación en red.
+*** Objetivos generales: b, e, i, j, l, n, ñ
+*** Competencias: b, j, l, n, ñ, t, w
 
 * 4.- Programación de servicio
 

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="165.729mm"
+   height="112.729mm"
+   viewBox="0 0 165.729 112.72897"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="osi_tcp_ip.svg"
+   inkscape:export-filename="osi_tcp_ip.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.2967358"
+     inkscape:cx="-47.812362"
+     inkscape:cy="316.94969"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.43042,-10.559537)">
+    <rect
+       style="fill:#ffbfbf;fill-opacity:1;stroke:none;stroke-width:0.306072;stroke-linecap:square"
+       id="rect14-6"
+       width="70.13533"
+       height="39.721058"
+       x="117.71095"
+       y="23.011185" />
+    <rect
+       style="fill:#cabfff;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect15-7"
+       width="70.13533"
+       height="11.689223"
+       x="117.71095"
+       y="65.1231" />
+    <rect
+       style="fill:#bfffd4;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect16-5"
+       width="70.13533"
+       height="11.689223"
+       x="117.71095"
+       y="79.254692" />
+    <rect
+       style="fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.246575;stroke-linecap:square"
+       id="rect17-3"
+       width="70.13533"
+       height="25.779139"
+       x="117.71095"
+       y="93.267281" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="139.33217"
+       y="44.180721"
+       id="text17-5"><tspan
+         sodipodi:role="line"
+         id="tspan17-6"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="139.33217"
+         y="44.180721">Aplicación</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="139.25046"
+       y="72.053047"
+       id="text18-2"><tspan
+         sodipodi:role="line"
+         id="tspan18-9"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="139.25046"
+         y="72.053047">Transporte</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="141.83096"
+       y="86.636497"
+       id="text19-1"><tspan
+         sodipodi:role="line"
+         id="tspan19-2"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="141.83096"
+         y="86.636497">Interret</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="139.19255"
+       y="107.82687"
+       id="text20-7"><tspan
+         sodipodi:role="line"
+         id="tspan20-0"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="139.19255"
+         y="107.82687">Host a red</tspan></text>
+    <rect
+       style="fill:#ffbfbf;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect1"
+       width="70.13533"
+       height="11.689223"
+       x="29.096443"
+       y="23.011185" />
+    <rect
+       style="fill:#cabfff;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect2"
+       width="70.13533"
+       height="11.689223"
+       x="29.096443"
+       y="65.168907" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="50.635841"
+       y="72.098885"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="50.635841"
+         y="72.098885">Transporte</tspan></text>
+    <rect
+       style="fill:#ffbfbf;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect9"
+       width="70.13533"
+       height="11.689223"
+       x="29.096443"
+       y="37.052883" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="47.762417"
+       y="44.206516"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="47.762417"
+         y="44.206516">Presentación</tspan></text>
+    <rect
+       style="fill:#ffbfbf;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect10"
+       width="70.13533"
+       height="11.689223"
+       x="29.096443"
+       y="51.094597" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="56.114819"
+       y="58.248226"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="56.114819"
+         y="58.248226">Sesión</tspan></text>
+    <rect
+       style="fill:#bfffd4;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect11"
+       width="70.13533"
+       height="11.689223"
+       x="29.096443"
+       y="79.243233" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="60.065662"
+       y="86.625023"
+       id="text11"><tspan
+         sodipodi:role="line"
+         id="tspan11"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="60.065662"
+         y="86.625023">Red</tspan></text>
+    <rect
+       style="fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect12"
+       width="70.13533"
+       height="11.689223"
+       x="29.096443"
+       y="93.239571" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="55.880947"
+       y="100.7542"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="55.880947"
+         y="100.7542">Enlace</tspan></text>
+    <rect
+       style="fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166038;stroke-linecap:square"
+       id="rect13"
+       width="70.13533"
+       height="11.689223"
+       x="29.096443"
+       y="107.2813" />
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="55.843487"
+       y="114.79588"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="55.843487"
+         y="114.79588">Físico</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.68829px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:1.3197;stroke-linecap:square"
+       x="64.331848"
+       y="18.705072"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.68829px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';fill:#000000;fill-opacity:1;stroke-width:1.3197"
+         x="64.331848"
+         y="18.705072">Modelo OSI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:5.68829px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:1.3197;stroke-linecap:square"
+       x="152.87933"
+       y="18.705072"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.68829px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';fill:#000000;fill-opacity:1;stroke-width:1.3197"
+         x="152.87933"
+         y="18.705072">Arquitectura TCP/IP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:4.42767px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.166039;stroke-linecap:square"
+       x="50.717606"
+       y="30.164789"
+       id="text16"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         style="fill:#000000;fill-opacity:1;stroke-width:0.166038"
+         x="50.717606"
+         y="30.164789">Aplicación</tspan></text>
+  </g>
+</svg>
