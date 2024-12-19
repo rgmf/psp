@@ -28,7 +28,8 @@
         <p>
           2. Arquitectura TCP/IP<br>
           2.1. Orígenes<br>
-          2.2. Funcionamiento básico
+          2.2. Funcionamiento básico<br>
+          2.3. Protocolos
         </p>
       </td>
       <td>
@@ -48,4 +49,4 @@
 # Índice de contenidos
 
 1. [Conceptos fundamentales de redes](01_redes.md)
-2. [Arquitectura TCP/IP](01_tcp_ip.md)
+2. [Arquitectura TCP/IP](02_tcp_ip.md)
