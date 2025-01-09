@@ -51,7 +51,7 @@ fun main() = runBlocking {
         //    canal para recibir mensajes y otro para enviar mensajes al cliente.
         val receiveChannel = socket.openReadChannel()
         val sendChannel = socket.openWriteChannel(autoFlush = true)
-         try {
+        try {
             while (true) {
                 // 7. Recibimos mensajes y respondemos a cada uno de ellos.
                 val message = receiveChannel.readUTF8Line()
@@ -65,6 +65,8 @@ fun main() = runBlocking {
     }
 }
 ```
+
+Hay algo en el código de arriba que debería llamar tu atención. No parece lo más adecuado que el socket se cierre, y termine la comunicación, a través de una excepción. En clase, te explicaré cómo adaptar el código de arriba para terminar de forma natural.
 
 ### Probar tu servidor
 
