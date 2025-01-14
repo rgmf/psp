@@ -67,7 +67,7 @@
 2. [Arquitectura TCP/IP](02_tcp_ip.md)
 3. [Sockets](03_sockets.md)
 4. [Programación de Sockets con Kotlin](04_programacion_sockets.md)
-5. [Bonus track: serialización con Kotlin](05_serialization.md)
+5. [Bonus track: serialización con Kotlin](05_serializacion.md)
 
 # Bibliografía
 
