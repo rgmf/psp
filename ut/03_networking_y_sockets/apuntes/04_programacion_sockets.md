@@ -20,7 +20,7 @@ dependencies {
 }
 ```
 
-## Mi primer servidor
+## Tu primer servidor
 
 Vayamos directos al grano con el código necesario en Kotlin para escribir un servidor que abre un socket, queda a la espera de conexiones y todo lo que recibe lo devuelve tal cual (un "eco server").
 
