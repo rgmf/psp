@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="140mm"
+   height="91mm"
+   viewBox="0 0 140 91"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="mesaje_con_cabeceras.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:lockguides="true"
+     inkscape:zoom="1.5276538"
+     inkscape:cx="263.14863"
+     inkscape:cy="294.56937"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2"
+       transform="translate(-0.68016815)" />
+    <g
+       id="g3"
+       transform="matrix(1.7655584,0,0,1.7655584,-117.31646,-121.57823)">
+      <rect
+         style="fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.337325;stroke-linecap:square"
+         id="rect17"
+         width="74.082954"
+         height="45.675694"
+         x="69.17131"
+         y="71.824814" />
+      <rect
+         style="fill:#bfffd4;fill-opacity:1;stroke:none;stroke-width:0.268882;stroke-linecap:square"
+         id="rect16"
+         width="66.192932"
+         height="32.480316"
+         x="73.116318"
+         y="81.606499" />
+      <rect
+         style="fill:#cabfff;fill-opacity:1;stroke:none;stroke-width:0.204569;stroke-linecap:square"
+         id="rect15"
+         width="58.983089"
+         height="21.098734"
+         x="76.721245"
+         y="90.154877" />
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:2.46944px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.133517;stroke-linecap:square"
+         x="92.506752"
+         y="95.566574"
+         id="text18"><tspan
+           sodipodi:role="line"
+           id="tspan18"
+           style="font-size:2.46944px;fill:#000000;fill-opacity:1;stroke-width:0.133517"
+           x="92.506752"
+           y="95.566574">Cabecera TCP o UDP</tspan></text>
+      <rect
+         style="fill:#efeff0;fill-opacity:1;stroke:none;stroke-width:0.125144;stroke-linecap:square"
+         id="rect14"
+         width="52.861519"
+         height="8.8102541"
+         x="80.462196"
+         y="98.798233"
+         transform="translate(-0.68016816)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:3.33717px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.125144;stroke-linecap:square"
+         x="91.480354"
+         y="104.1506"
+         id="text17"
+         transform="translate(-0.68016816)"><tspan
+           sodipodi:role="line"
+           id="tspan17"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';fill:#000000;fill-opacity:1;stroke-width:0.125144"
+           x="91.480354"
+           y="104.1506">Datos o mensaje</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:2.46944px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.125144;stroke-linecap:square"
+         x="97.825554"
+         y="86.542015"
+         id="text19"><tspan
+           sodipodi:role="line"
+           id="tspan19"
+           style="font-size:2.46944px;fill:#000000;fill-opacity:1;stroke-width:0.125144"
+           x="97.825554"
+           y="86.542015">Cabecera IP</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:2.46944px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.125144;stroke-linecap:square"
+         x="93.318504"
+         y="77.050613"
+         id="text20"><tspan
+           sodipodi:role="line"
+           id="tspan20"
+           style="font-size:2.46944px;fill:#000000;fill-opacity:1;stroke-width:0.125144"
+           x="93.318504"
+           y="77.050613">Cabecera Ethernet</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="109.803mm"
+   height="25.392mm"
+   viewBox="0 0 109.80301 25.392"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="paso2_segmento.svg"
+   inkscape:export-filename="paso2_segmento.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.3730935"
+     inkscape:cx="115.03971"
+     inkscape:cy="31.604317"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-7.4736114,-4.4221379)">
+    <g
+       id="g5"
+       transform="translate(2.1166667,2.1166667)">
+      <g
+         id="g4">
+        <rect
+           style="fill:#cabfff;fill-opacity:1;stroke:none;stroke-width:0.235418;stroke-linecap:square"
+           id="rect15"
+           width="105.80348"
+           height="15.577028"
+           x="7.4736114"
+           y="10.217128" />
+        <text
+           xml:space="preserve"
+           style="font-weight:300;font-size:4.92881px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.18483;stroke-linecap:square"
+           x="55.080994"
+           y="19.869743"
+           id="text2"><tspan
+             sodipodi:role="line"
+             id="tspan2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#000000;fill-opacity:1;stroke-width:0.18483"
+             x="55.080994"
+             y="19.869743">Cabecera TCP o UDP</tspan></text>
+        <rect
+           style="fill:#efeff0;fill-opacity:1;stroke:none;stroke-width:0.152141;stroke-linecap:square"
+           id="rect14"
+           width="44.251499"
+           height="15.555018"
+           x="7.5219712"
+           y="10.228133" />
+        <text
+           xml:space="preserve"
+           style="font-weight:300;font-size:5.89197px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.220949;stroke-linecap:square"
+           x="20.622429"
+           y="20.048191"
+           id="text17"><tspan
+             sodipodi:role="line"
+             id="tspan17"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Bold';fill:#000000;fill-opacity:1;stroke-width:0.220949"
+             x="20.622429"
+             y="20.048191">Datos</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-weight:300;font-size:4.35994px;font-family:'Fira Code';-inkscape-font-specification:'Fira Code Light';fill:#ae9a9a;fill-opacity:1;stroke:none;stroke-width:0.235732;stroke-linecap:square"
+         x="49.710262"
+         y="7.5367002"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="tspan3"
+           style="font-size:4.35994px;fill:#000000;fill-opacity:1;stroke-width:0.235732"
+           x="49.710262"
+           y="7.5367002">Segmento</tspan></text>
+    </g>
+  </g>
+</svg>
