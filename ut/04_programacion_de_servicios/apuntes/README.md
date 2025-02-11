@@ -26,6 +26,9 @@
         <p>
           2. Spring Boot con Kotlin
         </p>
+        <p>
+          3. cURL: comandos útiles
+        </p>
       </td>
       <td>
         CE4a. Se han analizado librerías que permitan implementar protocolos estándar de comunicación en red.<br>
@@ -42,8 +45,9 @@
 
 # Índice de contenidos
 
-2. [Ktor para creación de RESTful APIs](01_ktor_apis.md)
+1. [Ktor para creación de RESTful APIs](01_ktor_apis.md)
 2. [Spring Boot con Kotlin](02_spring_boot_kotlin.md)
+3. [cURL: comandos útiles](03_curl.md)
 
 # Bibliografía y otros recursos
 
