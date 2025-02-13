@@ -33,3 +33,11 @@ $ curl -X POST localhost:8080/api/person --header 'Content-Type: application/jso
 ```
 
 Verás que indicamos, vía **header**, el `Content-Type` del cuerto de la petición, en este caso `application/json`.
+
+## Obtener cabeceras
+
+Si quieres obtener las cabeceras (sin el cuerpo de la respuesta) puedes usar la opción `-I`:
+
+```shell
+$ curl -X GET -I https://www.google.es
+```
