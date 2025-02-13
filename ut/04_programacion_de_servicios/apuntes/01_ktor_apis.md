@@ -18,6 +18,15 @@ Con Ktor se pueden escribir RESTful APIs usando Kotlin. Tiene la ventaja de habe
 
 Puedes generar un proyecto desde cero con la herramienta web [Start Ktor](https://start.ktor.io/settings).
 
+Nosotros vamos a elegir los siguientes plugins:
+
+- `kotlinx.serializatin`
+- `Content Negotiation`
+- `Routing`
+- `Static Content`
+
+Además, necesitaremos añadir MongoDB como se indica en el siguiente apartado.
+
 ## Añadir MongoDB
 
 Existe una librería oficial de MongoDB para Kotlin que es la que vamos a usar nosotros. Para añadirla a tu proyecto tienes que añadir esta dependencia a tu Gradle:

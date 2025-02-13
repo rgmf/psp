@@ -1,0 +1,133 @@
+* Paso 1: preparar Ktor
+- En los apuntes aprecen los pasos para poner en marcha un proyecto de Ktor
+
+* Paso 2: entender la estructura del proyecto
+- Todo empieza en el fichero ~Application.kt~ donde, como se ve, se arranca el servidor y que acaba llamando a ~Application.moduloe()~ que está en el mismo fichero
+- ~configureRouting()~ es una función de extensión de la clase ~Application~ donde se configuran las rutas.
+  
+* Paso 3: entender cómo funciona el routing
+- Vemos el que hay hecho, lo probamos, cambiamos la ruta y pasamos al siguiente apartado
+  
+* Paso 4: crear contenido estático
+Solo hay que añadir un fichero HTML dentro de la carpeta indicada en ~staticResources~.
+Se puede probar con imágenes, etc. Cualquier cosa que vaya ahí se puede servir de forma estática, mediante la URL.
+
+* Paso 5: crear una ruta y "cacharrear" con las respuestas
+En esta parte vamos a crear rutas con diferentes respuestas para ver qué pasa y entender cómo funciona todo.
+Para probar, abrimos el navegador web y abrimos las herramientas del programador para ver las peticiones y las respuestas.
+
+Existen básicamente dos formas de responder con ktor:
+- *respond*: es una función genérica que permite enviar cualquier objeto: String, List... que será serializado de acuerdo al content negotiation que se tenga configurado como puede ser JSON o XML. En nuestro caso, como tenemos JSON instalado como serializador, será JSON a lo que se transformen todos los objetos que enviemos como respuestas.
+- *respondText*: es una función que permite enviar un texto indicando el Content-Type (por defecto este texto es tratado como ~text/plain~
+
+Existen otras formas de responder que, de momento, vamos a dejar para verlas cuando sean necesarias como, por ejemplo:
+- *respondFile*
+- *respondBytes*
+- *respondRedirect*
+
+- Enviamos un HTML pero el navegador web lo muestra como texto:
+#+begin_src
+  get("/ejemplo1") {
+      call.respond(
+          status = HttpStatusCode.OK,
+          message = "<h1>Este es el mensaje sin más</h1>"
+      )
+  }
+#+end_src
+
+- Ahora sí: configuramos correctamente el ~Content-Type~:
+#+begin_src
+  get("/ejemplo2") {
+      call.respondText(
+          status = HttpStatusCode.OK,
+          contentType = ContentType.parse("text/html"),
+          text = "<h1>Todo bien</h1>"
+      )
+  }
+#+end_src
+
+- Enviar un JSON usando el serialization (content negotiation):
+#+begin_src
+  @Serializable
+  data class Person(
+      val id: Int,
+      val name: String,
+      val lastname: String
+  )
+
+  ...
+  
+  get("/ejemplo3") {
+      call.respond(
+          listOf(
+              Person(1, "Alice", "Ecila"),
+              Person(2, "Bob", "Bobby")
+          )
+      )
+  }
+#+end_src
+
+* Paso 6: manejar path parameters
+#+begin_src
+get("/suma/{num1}/{num2}") {
+     val n1 = (call.pathParameters["num1"] ?: "0").toInt()
+     val n2 = (call.pathParameters["num2"] ?: "0").toInt()
+
+     call.respond(
+         mapOf("result" to (n1 + n2).toString())
+     )
+}
+#+end_src
+
+* Paso 7: manejar query parameters
+#+begin_src
+get("/operacion/{operation}") {
+    val operation = call.pathParameters["operation"] ?: ""
+    val n1 = (call.queryParameters["n1"] ?: "0").toInt()
+    val n2 = (call.queryParameters["n2"] ?: "0").toInt()
+
+    when (operation) {
+        "add" -> call.respond("result" to (n1 + n2).toString())
+        "sub" -> call.respond("result" to (n1 - n2).toString())
+        else -> call.respond(
+            HttpStatusCode.BadRequest,
+            "result" to "Operacion $operation desconocida"
+        )
+    }
+}
+#+end_src
+
+* Paso 8: manejar POST con datos en el body
+#+begin_src
+  @Serializable
+  data class Person(
+      val id: Int,
+      val name: String,
+      val lastname: String
+  )
+
+  ...
+  
+  val people = mutableListOf<Person>()
+
+  ...
+  
+  post("/people") {
+      try {
+          val person = call.receive<Person>()
+          people.add(person)
+          call.respond(HttpStatusCode.Created)
+      } catch (e: IllegalStateException) {
+          call.respond(HttpStatusCode.BadRequest)
+      } catch (e: JsonConvertException) {
+          call.respond(HttpStatusCode.BadRequest)
+      }
+  }
+#+end_src
+
+Podemos probar con cURL y luego crear un nuevo endpoint llamado ~/people~ para obtener la lista de personas añadidas:
+#+begin_src
+  get("/people") {
+      call.respond(people)
+  }
+#+end_src
